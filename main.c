@@ -41,7 +41,7 @@ int				main(void)
 //	char *str = "%1d";
 	int d = -51777;
 	int i = 51777;
-	char c = '#';
+	char c = '$';
 	char  *s = "herrroo";
 	unsigned int x = 127;
 	int p = 51234;
