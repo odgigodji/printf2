@@ -168,7 +168,8 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 
 	if ((**str == 'd' || **str == 'i' ) && (*type = 'd'))
 	{
-		*len = ft_numlen(value.d = va_arg(ap, int));
+		value.d = va_arg(ap, int);
+		*len = (value.d > 0) ? ft_numlen(value.d) : ft_numlen(-1 * value.d);
 	}
 	if (**str == 'c' && (*type = 'c') && (*len = 1))
 	{

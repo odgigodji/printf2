@@ -28,6 +28,12 @@ CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o: ../libft/libft.h
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o: ../libft/ft_isspace.c
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o: ../libft/libft.h
 
+CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
+CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o: ../libft/libft.h
+
+CMakeFiles/PRINTF.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
+CMakeFiles/PRINTF.dir/libft/ft_memset.c.o: ../libft/libft.h
+
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o: ../libft/ft_numlen.c
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o: ../libft/libft.h
 
@@ -57,6 +63,9 @@ CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o: ../libft/libft.h
 
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o: ../libft/libft.h
+
+CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o: ../libft/ft_strrev.c
+CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o: ../libft/libft.h
 
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o: ../libft/libft.h

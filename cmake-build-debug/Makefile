@@ -359,6 +359,60 @@ libft/ft_isspace.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_isspace.c.s
 .PHONY : libft/ft_isspace.c.s
 
+libft/ft_itoa.o: libft/ft_itoa.c.o
+
+.PHONY : libft/ft_itoa.o
+
+# target to build an object file
+libft/ft_itoa.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o
+.PHONY : libft/ft_itoa.c.o
+
+libft/ft_itoa.i: libft/ft_itoa.c.i
+
+.PHONY : libft/ft_itoa.i
+
+# target to preprocess a source file
+libft/ft_itoa.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_itoa.c.i
+.PHONY : libft/ft_itoa.c.i
+
+libft/ft_itoa.s: libft/ft_itoa.c.s
+
+.PHONY : libft/ft_itoa.s
+
+# target to generate assembly for a file
+libft/ft_itoa.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_itoa.c.s
+.PHONY : libft/ft_itoa.c.s
+
+libft/ft_memset.o: libft/ft_memset.c.o
+
+.PHONY : libft/ft_memset.o
+
+# target to build an object file
+libft/ft_memset.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_memset.c.o
+.PHONY : libft/ft_memset.c.o
+
+libft/ft_memset.i: libft/ft_memset.c.i
+
+.PHONY : libft/ft_memset.i
+
+# target to preprocess a source file
+libft/ft_memset.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_memset.c.i
+.PHONY : libft/ft_memset.c.i
+
+libft/ft_memset.s: libft/ft_memset.c.s
+
+.PHONY : libft/ft_memset.s
+
+# target to generate assembly for a file
+libft/ft_memset.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_memset.c.s
+.PHONY : libft/ft_memset.c.s
+
 libft/ft_numlen.o: libft/ft_numlen.c.o
 
 .PHONY : libft/ft_numlen.o
@@ -629,6 +683,33 @@ libft/ft_strlen.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_strlen.c.s
 .PHONY : libft/ft_strlen.c.s
 
+libft/ft_strrev.o: libft/ft_strrev.c.o
+
+.PHONY : libft/ft_strrev.o
+
+# target to build an object file
+libft/ft_strrev.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o
+.PHONY : libft/ft_strrev.c.o
+
+libft/ft_strrev.i: libft/ft_strrev.c.i
+
+.PHONY : libft/ft_strrev.i
+
+# target to preprocess a source file
+libft/ft_strrev.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_strrev.c.i
+.PHONY : libft/ft_strrev.c.i
+
+libft/ft_strrev.s: libft/ft_strrev.c.s
+
+.PHONY : libft/ft_strrev.s
+
+# target to generate assembly for a file
+libft/ft_strrev.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_strrev.c.s
+.PHONY : libft/ft_strrev.c.s
+
 libft/ft_toupper.o: libft/ft_toupper.c.o
 
 .PHONY : libft/ft_toupper.o
@@ -716,6 +797,12 @@ help:
 	@echo "... libft/ft_isspace.o"
 	@echo "... libft/ft_isspace.i"
 	@echo "... libft/ft_isspace.s"
+	@echo "... libft/ft_itoa.o"
+	@echo "... libft/ft_itoa.i"
+	@echo "... libft/ft_itoa.s"
+	@echo "... libft/ft_memset.o"
+	@echo "... libft/ft_memset.i"
+	@echo "... libft/ft_memset.s"
 	@echo "... libft/ft_numlen.o"
 	@echo "... libft/ft_numlen.i"
 	@echo "... libft/ft_numlen.s"
@@ -746,6 +833,9 @@ help:
 	@echo "... libft/ft_strlen.o"
 	@echo "... libft/ft_strlen.i"
 	@echo "... libft/ft_strlen.s"
+	@echo "... libft/ft_strrev.o"
+	@echo "... libft/ft_strrev.i"
+	@echo "... libft/ft_strrev.s"
 	@echo "... libft/ft_toupper.o"
 	@echo "... libft/ft_toupper.i"
 	@echo "... libft/ft_toupper.s"

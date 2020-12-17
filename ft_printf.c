@@ -28,7 +28,6 @@ int 	ft_printf(const char *str, ...)
 			k += write(1, str, 1);
 			str++;
 		}
-
 	}
 //	printf("\nk:%d", k);
 	free(spec);

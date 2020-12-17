@@ -109,6 +109,12 @@
 		<Unit filename="/Users/namerei/PRINTF/libft/ft_isspace.c">
 			<Option target="PRINTF"/>
 		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/libft/ft_itoa.c">
+			<Option target="PRINTF"/>
+		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/libft/ft_memset.c">
+			<Option target="PRINTF"/>
+		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/libft/ft_numlen.c">
 			<Option target="PRINTF"/>
 		</Unit>
@@ -137,6 +143,9 @@
 			<Option target="PRINTF"/>
 		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/libft/ft_strlen.c">
+			<Option target="PRINTF"/>
+		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/libft/ft_strrev.c">
 			<Option target="PRINTF"/>
 		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/libft/ft_toupper.c">

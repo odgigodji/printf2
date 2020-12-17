@@ -29,17 +29,51 @@ void 	print_value(t_value value, char type, int precision, int len)
 		ft_putstr(value.p);
 }
 
+//если точность больше длины
+void	ft_print_with_zeroes(int *len, int nb, int presicion)
+{
+	char *s;
+	int num_zero;
+
+	if (presicion < *len)
+		ft_putnbr(nb);
+	else
+	{
+		num_zero = presicion - *len;
+		if (nb < 0)
+		{
+			ft_putchar('-');
+			*len = *len +1;
+		}
+		while (num_zero--)
+		{
+			ft_putchar('0');
+			(*len)++;
+		}
+		if (nb < 0)
+			ft_putnbr(-1 * nb);
+		else
+			ft_putnbr(nb);
+		printf("len v itoge:%d", *len);
+//		*len = ft_strlen(s = ft_strjoin\
+//		(ft_memset(t, '0', num_zero), ft_itoa(nb)));
+	}
+
+}
+
 void 	ft_print_d(t_spec *spec)
 {
 	int len;
 	char c;
-
-	if (spec->value.d < 0 && spec->dot != 1 && spec->flag != ' '\
-	&& spec->precision != 0)
-	{
-		spec->value.d *= -1;
-		ft_putchar('-');
-	}
+int i = 0;
+char *s;
+//	if (spec->value.d < 0 && spec->dot != 1
+//			)
+//	{
+//		spec->value.d *= -1;
+//		ft_putchar('-');
+//		spec->len += 1;
+//	}
 	len = spec->len;
 	if (spec->flag == '-')
 	{
@@ -47,21 +81,33 @@ void 	ft_print_d(t_spec *spec)
 		while (spec->precision > len++)
 			ft_putchar('0');
 		ft_putnbr(spec->value.d);
-
-		while (len++ < spec->width)
+		while (len++ <= spec->width)
 			ft_putchar(' ');
 	}
 	else
 	{
-		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
-		if (spec->dot && spec->precision > len)
-			spec->width = spec->width - spec->precision + len;
-		while (len++ < spec->width)
-			ft_putchar(c);
-//		print_value(spec->value, spec->type, spec->precision, spec->len);
-		while (spec->precision > len++)
-			ft_putchar('0');
-		ft_putnbr(spec->value.d);
+		int hz = (spec->precision > spec->len) ? spec->precision : spec->len;
+		while(spec->width-- > hz)
+		{
+			ft_putchar(' ');
+		}
+//		if (spec->value.d < 0)
+//			ft_putchar('-');
+		ft_print_with_zeroes(&spec->len, spec->value.d, spec->precision);
+//		ft_putchar("$");
+//		ft_putstr(s);
+//		if (spec->dot == 1)
+//		{
+//			if (spec->flag == '0')
+//				spec->flag = ' ';
+//			ft_putnbr(spec->value.d);
+////			while (pre)
+//		}
+//		else
+//		{
+////			while()
+//			ft_putnbr(spec->value.d);
+//		}
 	}
 }
 
@@ -287,8 +333,8 @@ int 	ft_lenn(t_spec *spec)
 	else if (!spec->width && spec->precision)
 		return ((spec->type=='s' ? spec->precision :\
 		spec->len));
-	else if (!spec->width > spec->precision)
-		return(1);
+	else if (spec->width > spec->precision)
+		return(spec->width);
 	else if (spec->width < spec->precision)
 		return (2);
 }
@@ -432,3 +478,5 @@ int 	ft_lenn(t_spec *spec)
 //	else
 //		ft_putstr(spec->value.s);
 //}
+
+

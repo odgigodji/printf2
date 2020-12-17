@@ -28,6 +28,12 @@ CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o
  /Users/namerei/PRINTF/libft/ft_isspace.c
  /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o
+ /Users/namerei/PRINTF/libft/ft_itoa.c
+ /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/libft/ft_memset.c.o
+ /Users/namerei/PRINTF/libft/ft_memset.c
+ /Users/namerei/PRINTF/libft/libft.h
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o
  /Users/namerei/PRINTF/libft/ft_numlen.c
  /Users/namerei/PRINTF/libft/libft.h
@@ -57,6 +63,9 @@ CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o
  /Users/namerei/PRINTF/libft/libft.h
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o
  /Users/namerei/PRINTF/libft/ft_strlen.c
+ /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o
+ /Users/namerei/PRINTF/libft/ft_strrev.c
  /Users/namerei/PRINTF/libft/libft.h
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o
  /Users/namerei/PRINTF/libft/ft_toupper.c

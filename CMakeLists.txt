@@ -11,6 +11,8 @@ add_executable(PRINTF
         ft_parser.c
         libft/ft_strlen.c
         libft/ft_atoi.c
+        libft/ft_itoa.c
+        libft/ft_strrev.c
         libft/ft_isspace.c
         libft/ft_isdigit.c
         libft/ft_putnbr.c
@@ -25,6 +27,7 @@ add_executable(PRINTF
         libft/ft_strchr.c
         libft/ft_calloc.c
         libft/ft_bzero.c
+        libft/ft_memset.c
         ft_processor.c
         main.c
         )

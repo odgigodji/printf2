@@ -12,6 +12,8 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/namerei/PRINTF/libft/ft_calloc.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o"
   "/Users/namerei/PRINTF/libft/ft_isdigit.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o"
   "/Users/namerei/PRINTF/libft/ft_isspace.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o"
+  "/Users/namerei/PRINTF/libft/ft_itoa.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o"
+  "/Users/namerei/PRINTF/libft/ft_memset.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_memset.c.o"
   "/Users/namerei/PRINTF/libft/ft_numlen.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o"
   "/Users/namerei/PRINTF/libft/ft_numlen_unsigned.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o"
   "/Users/namerei/PRINTF/libft/ft_putchar.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o"
@@ -22,6 +24,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/Users/namerei/PRINTF/libft/ft_strchr.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o"
   "/Users/namerei/PRINTF/libft/ft_strjoin.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o"
   "/Users/namerei/PRINTF/libft/ft_strlen.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o"
+  "/Users/namerei/PRINTF/libft/ft_strrev.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o"
   "/Users/namerei/PRINTF/libft/ft_toupper.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o"
   "/Users/namerei/PRINTF/main.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/main.c.o"
   )
