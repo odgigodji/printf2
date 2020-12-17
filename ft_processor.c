@@ -54,7 +54,7 @@ void	ft_print_with_zeroes(int *len, int nb, int presicion)
 			ft_putnbr(-1 * nb);
 		else
 			ft_putnbr(nb);
-		printf("len v itoge:%d", *len);
+//		printf("len v itoge:%d", *len);
 //		*len = ft_strlen(s = ft_strjoin\
 //		(ft_memset(t, '0', num_zero), ft_itoa(nb)));
 	}
@@ -64,20 +64,10 @@ void	ft_print_with_zeroes(int *len, int nb, int presicion)
 void 	ft_print_d(t_spec *spec)
 {
 	int len;
-	char c;
-int i = 0;
-char *s;
-//	if (spec->value.d < 0 && spec->dot != 1
-//			)
-//	{
-//		spec->value.d *= -1;
-//		ft_putchar('-');
-//		spec->len += 1;
-//	}
+
 	len = spec->len;
 	if (spec->flag == '-')
 	{
-//		print_value(spec->value, spec->type, spec->precision, spec->len);
 		while (spec->precision > len++)
 			ft_putchar('0');
 		ft_putnbr(spec->value.d);
@@ -86,28 +76,18 @@ char *s;
 	}
 	else
 	{
-		int hz = (spec->precision > spec->len) ? spec->precision : spec->len;
+		int hz = 0;
+		if (spec->value.d < 0)
+			 hz = (spec->precision > spec->len) ? spec->precision + 1 :
+				spec->len + 1;
+		else
+			hz = (spec->precision > spec->len) ? spec->precision  :
+					 spec->len;
 		while(spec->width-- > hz)
 		{
-			ft_putchar(' ');
+			ft_putchar((spec->flag == '0' && spec->dot != 1) ? '0' : ' ');
 		}
-//		if (spec->value.d < 0)
-//			ft_putchar('-');
 		ft_print_with_zeroes(&spec->len, spec->value.d, spec->precision);
-//		ft_putchar("$");
-//		ft_putstr(s);
-//		if (spec->dot == 1)
-//		{
-//			if (spec->flag == '0')
-//				spec->flag = ' ';
-//			ft_putnbr(spec->value.d);
-////			while (pre)
-//		}
-//		else
-//		{
-////			while()
-//			ft_putnbr(spec->value.d);
-//		}
 	}
 }
 

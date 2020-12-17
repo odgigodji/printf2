@@ -11,47 +11,50 @@
 
 char *ft_str_toupper(char *s);
 
-int 	main(void)
+int 	main0(void)
 {
-	int d = -123;
-	printf("TEST:|%9.5d|\n", d);
-	ft_printf("TEST:|%9.5d|\n", d);
+	int d = 123;
+//	printf("TEST:|%3.5d|\n", d);
+//	ft_printf("TEST:|%3.5d|\n", d);
 
-//	printf("%0d\n",d);
-//	ft_printf("%d\n",d);
-//	ft_printf("%0d\n\n",d);
-//
-//	printf("%15d\n",d);
-//	printf("%015d\n",d);
-//	ft_printf("%15d\n",d);
-//	ft_printf("%015d\n\n",d);
-//
-//	printf("%15.5d\n",d);
-//	printf("%015.5d\n",d);
-//	ft_printf("%15.5d\n",d);
-//	ft_printf("%015.5d\n\n",d);
-//
-//	printf("%15.20d\n",d);
-//	printf("%015.20d\n",d);
-//	ft_printf("%15.20d\n",d);
-//	ft_printf("%015.20d\n\n",d);
-//
-//	printf("%3d\n",d);
-//	printf("%03d\n",d);
-//	ft_printf("%3d\n",d);
-//	ft_printf("%03d\n\n",d);
-//
-//	printf("%3.15d\n",d);
-//	printf("%03.15d\n",d);
-//	ft_printf("%3.15d\n",d);
-//	ft_printf("%03.15d\n\n",d);
-//
-//	printf("%.d\n",d);
-//	printf("%0.d\n",d);
-//	ft_printf("%.d\n",d);
-//	ft_printf("%0.d\n\n",d);
+	printf("%0d\n",d);
+	ft_printf("%d\n",d);
+	ft_printf("%0d\n\n",d);
 
+	printf("%15d\n",d);
+	printf("%015d\n",d);
+	ft_printf("%15d\n",d);
+	ft_printf("%015d\n\n",d);
 
+	printf("%15.5d\n",d);
+	printf("%015.5d\n",d);
+	ft_printf("%15.5d\n",d);
+	ft_printf("%015.5d\n\n",d);
+
+	printf("%15.20d\n",d);
+	printf("%015.20d\n",d);
+	ft_printf("%15.20d\n",d);
+	ft_printf("%015.20d\n\n",d);
+
+	printf("%3d\n",d);
+	printf("%03d\n",d);
+	ft_printf("%3d\n",d);
+	ft_printf("%03d\n\n",d);
+
+	printf("%3.15d\n",d);
+	printf("%03.15d\n",d);
+	ft_printf("%3.15d\n",d);
+	ft_printf("%03.15d\n\n",d);
+
+	printf("%.d\n",d);
+	printf("%0.d\n",d);
+	ft_printf("%.d\n",d);
+	ft_printf("%0.d\n\n",d);
+
+	printf("%15.d\n",d);
+	printf("%015.d\n",d);
+	ft_printf("%15.d\n",d);
+	ft_printf("%015.d\n\n",d);
 //	printf("%d\n",d);
 //	printf("%d\n",d);
 //	printf("%d\n",d);
@@ -130,7 +133,7 @@ char *ft_str_toupper(char *s)
 
 #include <stdio.h>
 
-int		main2()
+int		main1()
 {
 
 	int		a;
@@ -263,8 +266,8 @@ int main4(void)
 
     printf("origin w = 0    |%*i|\n", 0, i); // нет пробелов нигде число без изменений
     ft_printf("custom w = 0    |%*i|\n\n", 0, i);
-
-
+//
+//
     printf("just precision\n\n");
 
     printf("origin p > len: |%.6i|\n", i); // p - len нулей слева число без изменений
@@ -284,7 +287,7 @@ int main4(void)
 
     printf("origin just a dot: |%.i|\n", i); // нет пробелов нигде число без изменений
     ft_printf("custom just a dot: |%.i|\n\n", i);
-
+//
     printf("origin width and precision\n\n");
 
     printf("origin w > len && p > len: |%12.10i|\n", i); // w - p пробелов слева если w > p && p - len нулей слева число без изменений
@@ -301,9 +304,9 @@ int main4(void)
 
     printf("origin w > len && p = 0:   |%10.*i|\n", 0, i); // w - len пробелов слева число без изменений
     ft_printf("custom w > len && p = 0:   |%10.*i|\n\n", 0, i);
-
-
-
+//
+//
+//
     printf("origin w < len && p > len: |%1.10i|\n", i); // p - len нулей слева число без изменений
     ft_printf("custom w < len && p > len: |%1.10i|\n", i);
 
@@ -334,9 +337,9 @@ int main4(void)
 
     printf("origin w = len && p = 0:   |%2.*i|\n", 0, i); // нет пробелов нигде число без изменений
     ft_printf("custom w = len && p = 0:   |%2.*i|\n\n", 0, i);
-
-
-
+//
+//
+//
     printf("origin w < 0 && p > len: |%*.12i|\n", -10, i); // p - len нулей слева число без изменений
     ft_printf("custom w < 0 && p > len: |%*.12i|\n", -10, i);
 
@@ -368,7 +371,7 @@ int main4(void)
 
     printf("origin w = 0 && p = 0:   |%*.*i|\n",  0, 0, i); // нет пробелов нигде число без изменений
     ft_printf("custom w = 0 && p = 0:   |%*.*i|\n\n",  0, 0, i);
-
+//
     printf("add minus\n\n");
 
     printf("origin just minus: |%-i|\n", i); // нет пробелов нигде число без изменений
@@ -390,7 +393,7 @@ int main4(void)
 
     printf("origin w = 0    |%-*i|\n", 0, i); // нет пробелов нигде число без изменений
     ft_printf("custom w = 0    |%-*i|\n\n", 0, i);
-
+//
     printf("- precision\n\n");
 
     printf("origin p > len: |%-.6i|\n", i); // p - len нулей слева число без изменений
@@ -622,68 +625,3 @@ int main4(void)
     printf("origin w = 0 && p = 0:   |%0*.*i|\n",  0, 0, i); // число без изменений
     ft_printf("custom w = 0 && p = 0:   |%0*.*i|\n\n",  0, 0, i);
 }
-
-
-//char    ft_putnbr_base(unsigned int nb, int base)
-//{
-//	if (nb >= 10)
-//	{
-//		if (base < 10)
-//			ft_putnbr_base(nb / 10, base);
-//		else
-//		{
-//			return (nb + 55);
-//		}
-//	}
-//	return (nb + 48);
-//}
-//void  ft_res(unsigned int nb, int base, char **str)
-//{
-//	static int   i;
-//	if (nb > base)
-//		ft_res(nb / base, base, &str);
-//	*(str[i++]) = ft_putnbr_base(nb % base, base);
-//}
-//char  *ft_itoa_base(unsigned int nb, int base)
-//{
-//	unsigned int  n;
-//	char          *str;
-//	int           count = 0;
-//	n = nb;
-//	while (n != 0)
-//	{
-//		n /= 10;
-//		count++;
-//	}
-//	str = (char*)malloc(count + 1);
-//	str[count + 1] = '\0';
-//	ft_res(nb, base, &str);
-//	return (str);
-//}
-//
-//int				main(void)
-//{
-//	//%[флаги][ширина][.точность][размер точности][тип]
-//	//%-052*.*x
-////	ft_printf("MY:%-0", 5, "Hello", "world");
-////	ft_parser("0000----");
-//	//printf("ORIG:%-50s", "hellomfqz");
-////	char *str = "-*d";
-//	t_spec *spec;
-////	spec = (t_spec *)malloc(sizeof(t_spec*));
-//	if (!(spec = ft_parser("*s",10,"777a")))
-//		return (0);
-//	ft_processor(spec);
-////	printf("flag = '%c'\n",spec -> flag);
-////	printf("%s",spec -> content);
-//	free(spec);
-//	printf("\nORIG:\n%*s",10,"777a");
-//
-//
-////	char *nb;
-////	nb = ft_itoa_base(26, 16);
-////
-////	printf("-----atoi-----\n");
-////	printf("%s",nb);
-////	return (0);
-//}

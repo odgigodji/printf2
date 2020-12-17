@@ -20,7 +20,7 @@ int 	ft_printf(const char *str, ...)
 //			str++;
 			ft_parser((char *)str, ap, spec);// dlinu parsa
 			k+= ft_processor(spec);
-			str = str + spec->len_after_perc;
+			str = str + spec->len_after_perc ;
 //			k += spec->len_after_perc;
 		}
 		else

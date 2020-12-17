@@ -20,7 +20,7 @@ size_t	ft_strlen_type(const char *s)
 	len = 0;
 	while (s[len])
 	{
-		if (!(ft_strchr("dcsuxdXp%", s[len])))
+		if (!(ft_strchr("dcsuxiXp%", s[len])))
 			len++;
 		else
 			return (size_t)(len + 1);

@@ -18,13 +18,19 @@ stdio.h
 libft/libft.h
 /Users/namerei/PRINTF/libft/libft.h
 
-/Users/namerei/PRINTF/ft_processor.c
-ft_printf.h
-/Users/namerei/PRINTF/ft_printf.h
-
 /Users/namerei/PRINTF/libft/libft.h
 unistd.h
 -
 stdlib.h
+-
+
+/Users/namerei/PRINTF/main.c
+ft_printf.h
+/Users/namerei/PRINTF/ft_printf.h
+stdio.h
+-
+libft/libft.h
+/Users/namerei/PRINTF/libft/libft.h
+stdio.h
 -
 
