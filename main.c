@@ -8,53 +8,66 @@
 //	printf("h",51);
 //	return (0);
 //}
+char *ft_str_toupper(char *s)
+{
+	char *t = (char *)malloc(sizeof(char) + 1);
+	int i= 0;
+
+	while(*s)
+		t[i++] = (char)ft_toupper(*s++);
+	t[i] = '\0';
+	return (t);
+}
 
 char *ft_str_toupper(char *s);
 
-int 	main0(void)
+int 	main(void)
 {
+	int a1 = 1;
+	int a2 = 2;
+	int a3 = 3;
 	int d = 123;
-//	printf("TEST:|%3.5d|\n", d);
-//	ft_printf("TEST:|%3.5d|\n", d);
+	printf("TESTO:|%7d|\n", -14);
+	ft_printf("TESTM:|%7d|\n", -14);
 
-	printf("%0d\n",d);
-	ft_printf("%d\n",d);
-	ft_printf("%0d\n\n",d);
-
-	printf("%15d\n",d);
-	printf("%015d\n",d);
-	ft_printf("%15d\n",d);
-	ft_printf("%015d\n\n",d);
-
-	printf("%15.5d\n",d);
-	printf("%015.5d\n",d);
-	ft_printf("%15.5d\n",d);
-	ft_printf("%015.5d\n\n",d);
-
-	printf("%15.20d\n",d);
-	printf("%015.20d\n",d);
-	ft_printf("%15.20d\n",d);
-	ft_printf("%015.20d\n\n",d);
-
-	printf("%3d\n",d);
-	printf("%03d\n",d);
-	ft_printf("%3d\n",d);
-	ft_printf("%03d\n\n",d);
-
-	printf("%3.15d\n",d);
-	printf("%03.15d\n",d);
-	ft_printf("%3.15d\n",d);
-	ft_printf("%03.15d\n\n",d);
-
-	printf("%.d\n",d);
-	printf("%0.d\n",d);
-	ft_printf("%.d\n",d);
-	ft_printf("%0.d\n\n",d);
-
-	printf("%15.d\n",d);
-	printf("%015.d\n",d);
-	ft_printf("%15.d\n",d);
-	ft_printf("%015.d\n\n",d);
+//	printf("%0d\n",d);
+//	ft_printf("%d\n",d);
+//	ft_printf("%0d\n\n",d);
+//
+//	printf("%15d\n",d);
+//	printf("%015d\n",d);
+//	ft_printf("%15d\n",d);
+//	ft_printf("%015d\n\n",d);
+//
+//	printf("%15.5d\n",d);
+//	printf("%015.5d\n",d);
+//	ft_printf("%15.5d\n",d);
+//	ft_printf("%015.5d\n\n",d);
+//
+//	printf("%15.20d\n",d);
+//	printf("%015.20d\n",d);
+//	ft_printf("%15.20d\n",d);
+//	ft_printf("%015.20d\n\n",d);
+//
+//	printf("%3d\n",d);
+//	printf("%03d\n",d);
+//	ft_printf("%3d\n",d);
+//	ft_printf("%03d\n\n",d);
+//
+//	printf("%3.15d\n",d);
+//	printf("%03.15d\n",d);
+//	ft_printf("%3.15d\n",d);
+//	ft_printf("%03.15d\n\n",d);
+//
+//	printf("%.d\n",d);
+//	printf("%0.d\n",d);
+//	ft_printf("%.d\n",d);
+//	ft_printf("%0.d\n\n",d);
+//
+//	printf("%15.d\n",d);
+//	printf("%015.d\n",d);
+//	ft_printf("%15.d\n",d);
+//	ft_printf("%015.d\n\n",d);
 //	printf("%d\n",d);
 //	printf("%d\n",d);
 //	printf("%d\n",d);
@@ -81,7 +94,7 @@ int 	main0(void)
 //	printf("%d\n",d);
 }
 
-int				main1(void)
+int		main1(void)
 {
 	//%[флаги][ширина][.точность][размер точности][тип]
 	//%-052*.*x
@@ -120,20 +133,7 @@ int				main1(void)
 
 }
 
-char *ft_str_toupper(char *s)
-{
-	char *t = (char *)malloc(sizeof(char) + 1);
-	int i= 0;
-
-	while(*s)
-		t[i++] = (char)ft_toupper(*s++);
-	t[i] = '\0';
-	return (t);
-}
-
-#include <stdio.h>
-
-int		main1()
+int		main2()
 {
 
 	int		a;
@@ -243,6 +243,7 @@ int		main3()
 	return 0;
 }
 
+//мжйник для интов
 int main4(void)
 {
     int i = 10;
@@ -624,4 +625,380 @@ int main4(void)
 
     printf("origin w = 0 && p = 0:   |%0*.*i|\n",  0, 0, i); // число без изменений
     ft_printf("custom w = 0 && p = 0:   |%0*.*i|\n\n",  0, 0, i);
+}
+
+//мэйник для проверки стрok
+int main5(void)
+{
+	char *str = "abcde";
+
+	//ft_printf("%s please %s\n\n", "jesus", "help");
+
+	printf("origin just a string: |%s|\n", str); // ниче
+	ft_printf("custom just a string: |%s|\n\n", str); // ниче
+//
+
+	printf("origin w = len: |%5s|\n", str); // ниче
+	ft_printf("custom w = len: |%5s|\n", str); // ниче
+////
+	printf("origin w < 0    |%*s|\n", -4, str); // ниче
+	ft_printf("custom w < 0    |%*s|\n", -4, str); // ниче
+
+	printf("origin w = 0    |%*s|\n", 0, str); // ниче
+	ft_printf("custom w = 0    |%*s|\n\n", 0, str); // ниче
+//////
+//////
+	printf("just precision\n\n");
+
+	printf("origin p > len: |%.6s|\n", str); // ниче
+	ft_printf("custom p > len: |%.6s|\n", str); // ниче
+
+	printf("origin p < len: |%.3s|\n", str); // только "точность" символов
+	ft_printf("custom p < len: |%.3s|\n", str); // только "точность" символов
+
+	printf("origin p = len: |%.5s|\n", str); // ниче
+	ft_printf("custom p = len: |%.5s|\n", str); // ниче
+
+	printf("origin p < 0:   |%.*s|\n", -5, str); // ниче
+	ft_printf("custom p < 0:   |%.*s|\n", -5, str); // ниче
+
+	printf("origin p = 0:   |%.*s|\n", 0, str); // не выводит НИЧЕГО
+	ft_printf("custom p = 0:   |%.*s|\n\n", 0, str); // не выводит НИЧЕГО
+
+	printf("origin just a dot: |%.s|\n", str); // не выводит НИЧЕГО
+	ft_printf("custom just a dot: |%.s|\n\n", str); // не выводит НИЧЕГО
+//
+	printf("origin width and precision\n\n");
+
+	printf("origin w > len && p > len: |%10.10s|\n", str); // пробелы слева длиной "ширина - длина строки"
+	ft_printf("custom w > len && p > len: |%10.10s|\n", str); // пробелы слева длиной "ширина - длина строки"
+
+	printf("origin w > len && p < len: |%10.3s|\n", str); // только "точность" символов и проблемы слева длиной "ширина - длина строки"
+	ft_printf("custom w > len && p < len: |%10.3s|\n", str); // только "точность" символов и проблемы слева длиной "ширина - длина строки"
+
+	printf("origin w > len && p = len: |%10.5s|\n", str); // пробелы слева длиной "ширина - длина строки"
+	ft_printf("custom w > len && p = len: |%10.5s|\n", str); // пробелы слева длиной "ширина - длина строки"
+
+	printf("origin w > len && p < 0:   |%10.*s|\n", -3, str); // пробелы слева длиной "ширина - длина строки"
+	ft_printf("custom w > len && p < 0:   |%10.*s|\n", -3, str); // пробелы слева длиной "ширина - длина строки"
+
+	printf("origin w > len && p = 0:   |%10.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+	ft_printf("custom w > len && p = 0:   |%10.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+
+
+
+	printf("origin w < len && p > len: |%3.10s|\n", str); // ниче
+	ft_printf("custom w < len && p > len: |%3.10s|\n", str); // ниче
+
+	printf("origin w < len && p < len: |%3.3s|\n", str); //  только "точность" символов
+	ft_printf("custom w < len && p < len: |%3.3s|\n", str); //  только "точность" символов
+
+	printf("origin w < len && p = len: |%3.5s|\n", str); // ниче
+	ft_printf("custom w < len && p = len: |%3.5s|\n", str); // ниче
+
+	printf("origin w < len && p < 0:   |%3.*s|\n", -3, str); // ниче
+	ft_printf("custom w < len && p < 0:   |%3.*s|\n", -3, str); // ниче
+
+	printf("origin w < len && p = 0:   |%3.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+	ft_printf("custom w < len && p = 0:   |%3.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+//////
+//////
+	printf("origin w = len && p > len: |%5.10s|\n", str); // ниче
+	ft_printf("custom w = len && p > len: |%5.10s|\n", str); // ниче
+
+	printf("origin w = len && p < len: |%5.3s|\n", str); // только "точность" символов и пробелы слева длиной "ширина - длина строки"
+	ft_printf("custom w = len && p < len: |%5.3s|\n", str); // только "точность" символов и пробелы слева длиной "ширина - длина строки"
+
+	printf("origin w = len && p = len: |%5.5s|\n", str); // ниче
+	ft_printf("custom w = len && p = len: |%5.5s|\n", str); // ниче
+
+	printf("origin w = len && p < 0:   |%5.*s|\n", -3, str); // ниче
+	ft_printf("custom w = len && p < 0:   |%5.*s|\n", -3, str); // ниче
+////
+	printf("origin w = len && p = 0:   |%5.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+	ft_printf("custom w = len && p = 0:   |%5.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+////
+////
+////
+	printf("origin w < 0 && p > len: |%*.10s|\n", -3, str); // ниче
+	ft_printf("custom w < 0 && p > len: |%*.10s|\n", -3, str); // ниче
+
+	printf("origin w < 0 && p < len: |%*.3s|\n", -3, str); // только "точность" символов
+	ft_printf("custom w < 0 && p < len: |%*.3s|\n", -3, str); // только "точность" символов
+
+	printf("origin w < 0 && p = len: |%*.5s|\n", -3, str); // ниче
+	ft_printf("custom w < 0 && p = len: |%*.5s|\n", -3, str); // ниче
+//
+	printf("origin w < 0 && p < 0:   |%*.*s|\n", -3, -3, str); // ниче
+	///////////////////////////-----
+	ft_printf("custom w < 0 && p < 0:   |%*.*s|\n", -3, -3, str); // ниче
+
+	printf("origin w < 0 && p = 0:   |%*.*s|\n", -3, 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+	ft_printf("custom w < 0 && p = 0:   |%*.*s|\n\n", -3, 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+////
+//
+//
+	printf("origin w = 0 && p > len: |%*.10s|\n", 0, str); // ниче
+	ft_printf("custom w = 0 && p > len: |%*.10s|\n", 0, str); // ниче
+
+	printf("origin w = 0 && p < len: |%*.3s|\n",  0, str); // только "точность" символов
+	ft_printf("custom w = 0 && p < len: |%*.3s|\n",  0, str); // только "точность" символов
+
+	printf("origin w = 0 && p = len: |%*.5s|\n",  0, str); // ниче
+	ft_printf("custom w = 0 && p = len: |%*.5s|\n",  0, str); // ниче
+
+	printf("origin w = 0 && p < 0:   |%*.*s|\n",  0, -3, str); // ниче
+	ft_printf("custom w = 0 && p < 0:   |%*.*s|\n",  0, -3, str); // ниче
+
+	printf("origin w = 0 && p = 0:   |%*.*s|\n",  0, 0, str); // не выводит НИЧЕГО
+	ft_printf("custom w = 0 && p = 0:   |%*.*s|\n\n",  0, 0, str); // не выводит НИЧЕГО
+////
+	printf("add minus\n\n");
+
+	printf("just minus: |%-s|\n", str); // ниче
+	ft_printf("just minus: |%-s|\n\n", str); // ниче
+
+	printf("- width\n\n");
+
+	printf("w > len: |%-10s|\n", str); // справа пробелы
+	ft_printf("w > len: |%-10s|\n", str); // справа пробелы
+
+	printf("w < len: |%-3s|\n", str); // ниче
+	ft_printf("w < len: |%-3s|\n", str); // ниче
+
+	printf("w = len: |%-5s|\n", str); // ниче
+	ft_printf("w = len: |%-5s|\n", str); // ниче
+
+	printf("w < 0   |%-*s|\n", -4, str); // ниче
+	ft_printf("w < 0   |%-*s|\n", -4, str); // ниче
+
+	printf("w = 0   |%-*s|\n", 0, str); // ниче
+	ft_printf("w = 0   |%-*s|\n\n", 0, str); // ниче
+////
+	printf("- precision\n\n");
+
+	printf("p > len: |%-.6s|\n", str); // ниче
+	ft_printf("p > len: |%-.6s|\n", str); // ниче
+
+	printf("p < len: |%-.3s|\n", str); // только "точность" символов
+	ft_printf("p < len: |%-.3s|\n", str); // только "точность" символов
+
+	printf("p = len: |%-.5s|\n", str); // ниче
+	ft_printf("p = len: |%-.5s|\n", str); // ниче
+
+	printf("p < 0:   |%-.*s|\n", -5, str); // ниче
+	ft_printf("p < 0:   |%-.*s|\n", -5, str); // ниче
+
+	printf("p = 0:   |%-.*s|\n", 0, str); // не выводит НИЧЕГО
+	ft_printf("p = 0:   |%-.*s|\n", 0, str); // не выводит НИЧЕГО
+
+	printf("just a dot: |%-.s|\n", str); // не выводит НИЧЕГО
+	ft_printf("just a dot: |%-.s|\n\n", str); // не выводит НИЧЕГО
+
+	printf("- width and precision\n\n");
+
+	printf("w > len && p > len: |%-10.10s|\n", str); // пробелы справа длиной "ширина - длина строки"
+	ft_printf("w > len && p > len: |%-10.10s|\n", str); // пробелы справа длиной "ширина - длина строки"
+
+	printf("w > len && p < len: |%-10.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+	ft_printf("w > len && p < len: |%-10.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+
+	printf("w > len && p = len: |%-10.5s|\n", str); // пробелы справа длиной "ширина - длина строки"
+	ft_printf("w > len && p = len: |%-10.5s|\n", str); // пробелы справа длиной "ширина - длина строки"
+
+	printf("w > len && p < 0:   |%-10.*s|\n", -3, str); // пробелы справа длиной "ширина - длина строки"
+	ft_printf("w > len && p < 0:   |%-10.*s|\n", -3, str); // пробелы справа длиной "ширина - длина строки"
+
+	printf("w > len && p = 0:   |%-10.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+	ft_printf("w > len && p = 0:   |%-10.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+////
+////
+	printf("w < len && p > len: |%-3.10s|\n", str); // ниче
+	ft_printf("w < len && p > len: |%-3.10s|\n", str); // ниче
+
+	printf("w < len && p < len: |%-3.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+	ft_printf("w < len && p < len: |%-3.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+
+	printf("w < len && p = len: |%-3.5s|\n", str); // ниче
+	ft_printf("w < len && p = len: |%-3.5s|\n", str); // ниче
+
+	printf("w < len && p < 0:   |%-3.*s|\n", -3, str); // ниче
+	ft_printf("w < len && p < 0:   |%-3.*s|\n", -3, str); // ниче
+
+	printf("w < len && p = 0:   |%-3.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+	ft_printf("w < len && p = 0:   |%-3.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+
+	printf("w = len && p > len: |%-5.10s|\n", str); // ниче
+	ft_printf("w = len && p > len: |%-5.10s|\n", str); // ниче
+
+	printf("w = len && p < len: |%-5.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+	ft_printf("w = len && p < len: |%-5.3s|\n", str); // только "точность" символов и пробелы справа длиной "ширина - длина строки"
+//
+	printf("w = len && p = len: |%-5.5s|\n", str); // ниче
+	ft_printf("w = len && p = len: |%-5.5s|\n", str); // ниче
+
+	printf("w = len && p < 0:   |%-5.*s|\n", -3, str); // ниче
+	ft_printf("w = len && p < 0:   |%-5.*s|\n", -3, str); // ниче
+
+	printf("w = len && p = 0:   |%-5.*s|\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+	ft_printf("w = len && p = 0:   |%-5.*s|\n\n", 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = ширина
+
+	printf("w < 0 && p > len: |%-*.10s|\n", -3, str); // ниче
+	ft_printf("w < 0 && p > len: |%-*.10s|\n", -3, str); // ниче
+
+	printf("w < 0 && p < len: |%-*.3s|\n", -3, str); // только "точность" символов
+	ft_printf("w < 0 && p < len: |%-*.3s|\n", -3, str); // только "точность" символов
+
+	printf("w < 0 && p = len: |%-*.5s|\n", -3, str); // ниче
+	ft_printf("w < 0 && p = len: |%-*.5s|\n", -3, str); // ниче
+
+	printf("w < 0 && p < 0:   |%-*.*s|\n", -3, -3, str); // ниче
+	ft_printf("w < 0 && p < 0:   |%-*.*s|\n", -3, -3, str); // ниче
+//
+	printf("w < 0 && p = 0:   |%*.*s|\n", -3, 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+	ft_printf("w < 0 && p = 0:   |%*.*s|\n\n", -3, 0, str); // ЕСЛИ ТОЧНОСТЬ 0 то НИЧЕГО НЕ ПЕЧАТАЙ и тут пробелов = точность
+
+	printf("w = 0 && p > len: |%-*.10s|\n", 0, str); // ниче
+	ft_printf("w = 0 && p > len: |%-*.10s|\n", 0, str); // ниче
+
+	printf("w = 0 && p < len: |%-*.3s|\n",  0, str); // только "точность" символов
+	ft_printf("w = 0 && p < len: |%-*.3s|\n",  0, str); // только "точность" символов
+
+	printf("w = 0 && p = len: |%-*.5s|\n",  0, str); // ниче
+	ft_printf("w = 0 && p = len: |%-*.5s|\n",  0, str); // ниче
+
+	printf("w = 0 && p < 0:   |%-*.*s|\n",  0, -3, str); // ниче
+	ft_printf("w = 0 && p < 0:   |%-*.*s|\n",  0, -3, str); // ниче
+
+	printf("w = 0 && p = 0:   |%-*.*s|\n",  0, 0, str); // не выводит НИЧЕГО
+	ft_printf("w = 0 && p = 0:   |%-*.*s|\n\n",  0, 0, str); // не выводит НИЧЕГО
+
+//
+//
+	printf("just zero: |%0s|\n", str);
+	ft_printf("just zero: |%0s|\n\n", str);
+
+
+	printf("0 width\n\n");
+
+	printf("w > len: |%010s|\n", str);
+	ft_printf("w > len: |%010s|\n", str);
+
+	printf("w < len: |%03s|\n", str);
+	ft_printf("w < len: |%03s|\n", str);
+
+	printf("w = len: |%05s|\n", str);
+	ft_printf("w = len: |%05s|\n", str);
+
+	printf("w < 0   |%0*s|\n", -4, str);
+	ft_printf("w < 0   |%0*s|\n", -4, str);
+
+
+	printf("w = 0   |%0*s|\n", 0, str);
+	ft_printf("w = 0   |%0*s|\n\n", 0, str);
+
+
+	printf("0 precision\n\n");
+
+	printf("p > len: |%0.6s|\n", str);
+	ft_printf("p > len: |%0.6s|\n", str);
+
+	printf("p < len: |%0.3s|\n", str);
+	ft_printf("p < len: |%0.3s|\n", str);
+
+	printf("p = len: |%0.5s|\n", str);
+	ft_printf("p = len: |%0.5s|\n", str);
+
+	printf("p < 0:   |%0.*s|\n", -5, str);
+	ft_printf("p < 0:   |%0.*s|\n", -5, str);
+
+	printf("p = 0:   |%0.*s|\n", 0, str);
+	ft_printf("p = 0:   |%0.*s|\n", 0, str);
+
+	printf("just a dot: |%0.s|\n", str);
+	ft_printf("just a dot: |%0.s|\n\n", str);
+
+//
+	printf("0 width and precision\n\n");
+
+	printf("w > len && p > len: |%010.10s|\n", str);
+	ft_printf("w > len && p > len: |%010.10s|\n", str);
+
+	printf("w > len && p < len: |%010.3s|\n", str);
+	ft_printf("w > len && p < len: |%010.3s|\n", str);
+
+	printf("w > len && p = len: |%010.5s|\n", str);
+	ft_printf("w > len && p = len: |%010.5s|\n", str);
+
+	printf("w > len && p < 0:   |%010.*s|\n", -3, str);
+	ft_printf("w > len && p < 0:   |%010.*s|\n", -3, str);
+
+	printf("w > len && p = 0:   |%010.*s|\n", 0, str);
+	ft_printf("w > len && p = 0:   |%010.*s|\n\n", 0, str);
+
+
+	printf("w < len && p > len: |%03.10s|\n", str);
+	ft_printf("w < len && p > len: |%03.10s|\n", str);
+
+	printf("w < len && p < len: |%03.3s|\n", str);
+	ft_printf("w < len && p < len: |%03.3s|\n", str);
+
+	printf("w < len && p = len: |%03.5s|\n", str);
+	ft_printf("w < len && p = len: |%03.5s|\n", str);
+
+	printf("w < len && p < 0:   |%03.*s|\n", -3, str);
+	ft_printf("w < len && p < 0:   |%03.*s|\n", -3, str);
+
+	printf("w < len && p = 0:   |%03.*s|\n", 0, str);
+	ft_printf("w < len && p = 0:   |%03.*s|\n\n", 0, str);
+//
+//
+	printf("w = len && p > len: |%05.10s|\n", str);
+	ft_printf("w = len && p > len: |%05.10s|\n", str);
+
+	printf("w = len && p < len: |%05.3s|\n", str);
+	ft_printf("w = len && p < len: |%05.3s|\n", str);
+
+	printf("w = len && p = len: |%05.5s|\n", str);
+	ft_printf("w = len && p = len: |%05.5s|\n", str);
+
+	printf("w = len && p < 0:   |%05.*s|\n", -3, str);
+	ft_printf("w = len && p < 0:   |%05.*s|\n", -3, str);
+
+	printf("w = len && p = 0:   |%05.*s|\n", 0, str);
+	ft_printf("w = len && p = 0:   |%05.*s|\n\n", 0, str);
+
+//
+	printf("w < 0 && p > len: |%0*.10s|\n", -3, str);
+	ft_printf("w < 0 && p > len: |%0*.10s|\n", -3, str);
+
+	printf("w < 0 && p < len: |%0*.3s|\n", -3, str);
+	ft_printf("w < 0 && p < len: |%0*.3s|\n", -3, str);
+
+	printf("w < 0 && p = len: |%0*.5s|\n", -3, str);
+	ft_printf("w < 0 && p = len: |%0*.5s|\n", -3, str);
+
+	printf("w < 0 && p < 0:   |%0*.*s|\n", -3, -3, str);
+	ft_printf("w < 0 && p < 0:   |%0*.*s|\n", -3, -3, str);
+
+	printf("w < 0 && p = 0:   |%0*.*s|\n", -3, 0, str);
+	ft_printf("w < 0 && p = 0:   |%0*.*s|\n\n", -3, 0, str);
+
+
+	printf("w = 0 && p > len: |%0*.10s|\n", 0, str);
+	ft_printf("w = 0 && p > len: |%0*.10s|\n", 0, str);
+
+	printf("w = 0 && p < len: |%0*.3s|\n",  0, str);
+	ft_printf("w = 0 && p < len: |%0*.3s|\n",  0, str);
+
+	printf("w = 0 && p = len: |%0*.5s|\n",  0, str);
+	ft_printf("w = 0 && p = len: |%0*.5s|\n",  0, str);
+
+	printf("w = 0 && p < 0:   |%0*.*s|\n",  0, -3, str);
+	ft_printf("w = 0 && p < 0:   |%0*.*s|\n",  0, -3, str);
+
+	printf("w = 0 && p = 0:   |%0*.*s|\n",  0, 0, str);
+	ft_printf("w = 0 && p = 0:   |%0*.*s|\n\n",  0, 0, str);
+
+	return 0;
 }

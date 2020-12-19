@@ -13,6 +13,10 @@ CMakeFiles/PRINTF.dir/ft_processor.c.o: ../ft_printf.h
 CMakeFiles/PRINTF.dir/ft_processor.c.o: ../ft_processor.c
 CMakeFiles/PRINTF.dir/ft_processor.c.o: ../libft/libft.h
 
+CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../ft_putchar1.c
+CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../libft/libft.h
+
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: ../libft/libft.h
 
@@ -45,9 +49,6 @@ CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o: ../libft/libft.h
 
 CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
 CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o: ../libft/libft.h
-
-CMakeFiles/PRINTF.dir/libft/ft_putnbr_unsigned.c.o: ../libft/ft_putnbr_unsigned.c
-CMakeFiles/PRINTF.dir/libft/ft_putnbr_unsigned.c.o: ../libft/libft.h
 
 CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
 CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o: ../libft/libft.h

@@ -224,6 +224,33 @@ ft_processor.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_processor.c.s
 .PHONY : ft_processor.c.s
 
+ft_putchar1.o: ft_putchar1.c.o
+
+.PHONY : ft_putchar1.o
+
+# target to build an object file
+ft_putchar1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.o
+.PHONY : ft_putchar1.c.o
+
+ft_putchar1.i: ft_putchar1.c.i
+
+.PHONY : ft_putchar1.i
+
+# target to preprocess a source file
+ft_putchar1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.i
+.PHONY : ft_putchar1.c.i
+
+ft_putchar1.s: ft_putchar1.c.s
+
+.PHONY : ft_putchar1.s
+
+# target to generate assembly for a file
+ft_putchar1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.s
+.PHONY : ft_putchar1.c.s
+
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
 .PHONY : libft/ft_atoi.o
@@ -521,33 +548,6 @@ libft/ft_putnbr.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.s
 .PHONY : libft/ft_putnbr.c.s
 
-libft/ft_putnbr_unsigned.o: libft/ft_putnbr_unsigned.c.o
-
-.PHONY : libft/ft_putnbr_unsigned.o
-
-# target to build an object file
-libft/ft_putnbr_unsigned.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_putnbr_unsigned.c.o
-.PHONY : libft/ft_putnbr_unsigned.c.o
-
-libft/ft_putnbr_unsigned.i: libft/ft_putnbr_unsigned.c.i
-
-.PHONY : libft/ft_putnbr_unsigned.i
-
-# target to preprocess a source file
-libft/ft_putnbr_unsigned.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_putnbr_unsigned.c.i
-.PHONY : libft/ft_putnbr_unsigned.c.i
-
-libft/ft_putnbr_unsigned.s: libft/ft_putnbr_unsigned.c.s
-
-.PHONY : libft/ft_putnbr_unsigned.s
-
-# target to generate assembly for a file
-libft/ft_putnbr_unsigned.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/libft/ft_putnbr_unsigned.c.s
-.PHONY : libft/ft_putnbr_unsigned.c.s
-
 libft/ft_putstr.o: libft/ft_putstr.c.o
 
 .PHONY : libft/ft_putstr.o
@@ -782,6 +782,9 @@ help:
 	@echo "... ft_processor.o"
 	@echo "... ft_processor.i"
 	@echo "... ft_processor.s"
+	@echo "... ft_putchar1.o"
+	@echo "... ft_putchar1.i"
+	@echo "... ft_putchar1.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"
@@ -815,9 +818,6 @@ help:
 	@echo "... libft/ft_putnbr.o"
 	@echo "... libft/ft_putnbr.i"
 	@echo "... libft/ft_putnbr.s"
-	@echo "... libft/ft_putnbr_unsigned.o"
-	@echo "... libft/ft_putnbr_unsigned.i"
-	@echo "... libft/ft_putnbr_unsigned.s"
 	@echo "... libft/ft_putstr.o"
 	@echo "... libft/ft_putstr.i"
 	@echo "... libft/ft_putstr.s"

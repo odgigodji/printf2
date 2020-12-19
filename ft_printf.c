@@ -1,8 +1,14 @@
 #include "libft/libft.h"
 #include "ft_printf.h"
 
+//int g_res = 0;
+//s,p,c - ok
+//d,u,x,X - work
+
+
 int 	ft_printf(const char *str, ...)
 {
+	g_res = 0;
 	int k = 0;
 	size_t str_len;
 	va_list ap;
@@ -25,14 +31,15 @@ int 	ft_printf(const char *str, ...)
 		}
 		else
 		{
-			k += write(1, str, 1);
+			ft_putchar1(*str);
+//			g_res += write(1, str, 1);
 			str++;
 		}
 	}
 //	printf("\nk:%d", k);
 	free(spec);
 	va_end(ap);
-	return (k);
+	return (g_res);
 }
 
 //s p i точность в d если больше длины d то заполняет нулями

@@ -57,7 +57,7 @@ char ft_flag_parser(char **str, int *res)
 	return (flag);
 }
 
-int ft_width_parser(char **str, va_list ap, int *res)
+int ft_width_parser(char **str, va_list ap, int *res, char *flag)
 {
 	int width;
 //	printf("|%s|\n",*str);
@@ -66,6 +66,11 @@ int ft_width_parser(char **str, va_list ap, int *res)
 	if (ft_isdigit(**str) || **str == '*')
 	{
 		width = (**str == '*' ? va_arg(ap,int) : ft_atoi(*str));
+		if (width < 0)
+		{
+			width *= -1;
+			*flag = '-';
+		}
 	}
 	while ((ft_isdigit(**str)) || (**str == '*'))
 	{
@@ -89,6 +94,7 @@ int ft_precision_parser(char **str, va_list ap, int *dot)
 		{
 //			printf("[pres%s]", *str);
 			precision = (**str == '*' ? va_arg(ap, int) : ft_atoi(*str));
+//			precision = (precision < 0) ? 0 : precision;
 		}
 	}
 //	(*str)++;
@@ -130,6 +136,7 @@ char *f(unsigned long x, int flag)//perevod v 16
 		x = tmp;
 		i--;
 	}
+//	printf("%s",c);
 	return (c);
 }
 
@@ -177,7 +184,10 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 	}
 	if (**str == 's' && (*type = 's'))
 	{
-		*len = ft_strlen(value.s = va_arg(ap, char *));
+		value.s = va_arg(ap, char *);
+		if (value.s == NULL)
+			value.s = "(null)";
+		*len = ft_strlen(value.s);
 	}
 	if (**str == 'u' && (*type = 'u'))
 	{
@@ -223,7 +233,7 @@ void ft_parser(char *str, va_list ap, t_spec *spec)
 
 //	printf("Позиция после парсера флага:|%s|",str);
 //	printf("|flag:'%c'|\n",spec ->flag);
-	spec->width = ft_width_parser(&str, ap, &res);
+	spec->width = ft_width_parser(&str, ap, &res, &spec->flag);
 //	printf("Позиция после парсера ширины:|%s|",str);
 
 	spec->precision = ft_precision_parser(&str, ap, &spec->dot);
