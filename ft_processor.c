@@ -226,7 +226,9 @@ void 	ft_print_u(t_spec *spec)
 	}
 	else
 	{
-		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+		c = ((spec->flag == '0') && (!spec->dot || (spec->precision < 0 && \
+				spec->width)) ? '0' : ' ');
+//		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
 		if (spec->dot && spec->precision > len)
 			spec->width = spec->width - spec->precision + len;
 		while (len++ < spec->width)
@@ -264,9 +266,8 @@ void 	ft_print_x(t_spec *spec)
 	}
 	else
 	{
-		c = ((spec->flag == '0') && (!spec->dot || (spec->precision < 0 &&
+		c = ((spec->flag == '0') && (!spec->dot || (spec->precision < 0 && \
 				spec->width)) ? '0' : ' ');
-
 		if (spec->dot && spec->precision > len)
 			spec->width = spec->width - spec->precision + len;
 		while (len++ < spec->width)
@@ -304,7 +305,9 @@ void 	ft_print_X(t_spec *spec)
 	}
 	else
 	{
-		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+		c = ((spec->flag == '0') && (!spec->dot || (spec->precision < 0 && \
+				spec->width)) ? '0' : ' ');
+//		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
 		if (spec->dot && spec->precision > len)
 			spec->width = spec->width - spec->precision + len;
 		while (len++ < spec->width)
