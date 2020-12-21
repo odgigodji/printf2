@@ -112,16 +112,26 @@ void 	ft_print_d(t_spec *spec)
 		int hz = 0;
 		if (spec->value.d < 0)
 		{
-			hz = (spec->precision > spec->len \
- && spec->dot == 1) ? spec->precision + 1 :
-				 spec->len + 1;
+			hz = (spec->precision > spec->len && spec->dot == 1) ?
+					spec->precision + 1 : spec->len + 1;
 //			ft_putchar('-');
 		}
 
 		else
 			hz = (spec->precision > spec->len) ? spec->precision  :
 					 spec->len;
-		if (spec->width && !spec->dot && spec->flag == '0' && spec->value.d < 0)
+
+		if ((spec->width && spec->flag == '0' && spec->value.d
+		        <0 ) && (!spec->dot || (spec->precision < 0 && spec->dot)))
+
+
+//		if ((spec->width && !spec->dot && spec->flag == '0' && spec->value.d <
+//		        0 )|| (spec->flag == '0' && spec->width && spec->dot &&
+//		        		spec->precision < 0 &&
+//		        spec->value
+//		        .d <
+//		                0))
+
 		{
 			ft_putchar1('-');
 			spec->value.d *= -1;
@@ -254,7 +264,9 @@ void 	ft_print_x(t_spec *spec)
 	}
 	else
 	{
-		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+		c = ((spec->flag == '0') && (!spec->dot || (spec->precision < 0 &&
+				spec->width)) ? '0' : ' ');
+
 		if (spec->dot && spec->precision > len)
 			spec->width = spec->width - spec->precision + len;
 		while (len++ < spec->width)

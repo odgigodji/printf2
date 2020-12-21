@@ -35,8 +35,8 @@ int 	main(void)
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
 
-	printf("%02.*d\n", -2, d0 );
-	ft_printf("%02.*d\n", -2, d0 );
+	printf("%04.*x\n", -1 ,d0 );
+	ft_printf("%04.*x\n", -1,  d0 );
 //	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
 //			  d1,d2,
 //		   d3,d4,d5,d6,d7);
