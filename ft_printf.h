@@ -13,7 +13,7 @@ int g_res;
 
 typedef struct s_value
 {
-	long 	d;
+	int 	d;
 	char 	c;
 	char	*s;
 	unsigned int u;
@@ -42,6 +42,6 @@ int	ft_processor(t_spec *spec);
 void	ft_putchar1(int c);
 void	ft_putstr1(char *s);
 void	ft_putstrn1(char *s, int n);
-void		ft_putnbr1(long nb);
+void		ft_putnbr1(int nb);
 
 #endif

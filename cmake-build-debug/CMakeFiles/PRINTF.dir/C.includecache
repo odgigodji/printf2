@@ -6,14 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/Users/namerei/PRINTF/ft_parser.c
-stdio.h
--
-ft_printf.h
-/Users/namerei/PRINTF/ft_printf.h
-stdarg.h
--
-
 /Users/namerei/PRINTF/ft_printf.h
 stdlib.h
 -
@@ -31,4 +23,12 @@ unistd.h
 -
 stdlib.h
 -
+
+/Users/namerei/PRINTF/main.c
+ft_printf.h
+/Users/namerei/PRINTF/ft_printf.h
+stdio.h
+-
+libft/libft.h
+/Users/namerei/PRINTF/libft/libft.h
 

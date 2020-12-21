@@ -175,7 +175,7 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 
 	if ((**str == 'd' || **str == 'i' ) && (*type = 'd'))
 	{
-		value.d = va_arg(ap, long);
+		value.d = va_arg(ap, int);
 		*len = (value.d > 0) ? ft_numlen(value.d) : ft_numlen(-1 * value.d);
 	}
 	if (**str == 'c' && (*type = 'c') && (*len = 1))
@@ -200,7 +200,7 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 	}
 	if (**str == 'X' && (*type = 'X'))
 	{
-		value.X = f(va_arg(ap, unsigned long), 1);
+		value.X = f(va_arg(ap, unsigned int), 1);
 		*len = ft_strlen(value.X);
 	}
 	if (**str == 'p' && (*type = 'p'))

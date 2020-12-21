@@ -30,8 +30,8 @@ int 	main(void)
 //	printf("TESTO:|%-7d|\n", -14);
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
-	printf("|%-d|\n", -2147483648);
-	ft_printf("|%-d|", -2147483648);
+	printf("|%d|\n", -2147483648);
+	ft_printf("|%d|", -2147483648);
 //	printf("%07d\n", -54);
 //	ft_printf("%07d\n", -54);
 ////	ft_printf("%0d\n\n",d);

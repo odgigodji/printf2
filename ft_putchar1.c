@@ -60,9 +60,9 @@ static void		q(int nb)
 }
 
 
-void		ft_putnbr1(long nb)
+void		ft_putnbr1(int nb)
 {
-	if (nb == 0 )
+	if (nb == 0 || nb == -2147483648)
 	{
 		g_res += write(1, (nb == 0) ? "0" : "2147483648", (nb == 0) ? 1 : 11);
 		return ;
