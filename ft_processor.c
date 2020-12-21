@@ -80,6 +80,8 @@ void 	ft_print_d(t_spec *spec)
 	int len;
 
 	len = spec->len;
+//	if (spec->precision < 0)
+//		spec->precision = spec->len;
 	if (spec->flag == '-')
 	{
 		if (spec->value.d < 0)
@@ -115,6 +117,7 @@ void 	ft_print_d(t_spec *spec)
 				 spec->len + 1;
 //			ft_putchar('-');
 		}
+
 		else
 			hz = (spec->precision > spec->len) ? spec->precision  :
 					 spec->len;
@@ -125,7 +128,7 @@ void 	ft_print_d(t_spec *spec)
 		}
 		while(spec->width-- > hz ) //&& spec->dot
 		{
-			if (spec->dot) // ?????
+			if (spec->dot && spec->precision >=0) // ?????
 				spec->flag = ' ';
 			ft_putchar1((spec->flag == '0' || (!spec->dot && spec->flag !=
 			' ')) ?
