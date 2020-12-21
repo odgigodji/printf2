@@ -35,13 +35,17 @@ int 	main(void)
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
 
-	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
-			  d1,d2,
-		   d3,d4,d5,d6,d7);
-	printf("%d\n",t);
-	ft_printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0, d1,d2,
-		   d3,d4,d5,d6,d7);
-	printf("%d",g_res);
+	printf("%02.*d\n", -2,d1 );
+	ft_printf("%02.*d\n", -2,d1 );
+//	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
+//			  d1,d2,
+//		   d3,d4,d5,d6,d7);
+//	printf("%d\n",t);
+//	ft_printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0, d1,d2,
+//		   d3,d4,d5,d6,d7);
+//	printf("%d",g_res);
+
+
 //	ft_printf("|%d|", -216);
 //	printf("%07d\n", -54);
 //	ft_printf("%07d\n", -54);
