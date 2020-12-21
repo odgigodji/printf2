@@ -23,15 +23,26 @@ char *ft_str_toupper(char *s);
 
 int 	main(void)
 {
-	int a1 = 1;
-	int a2 = 2;
-	int a3 = 3;
-	int d = -216;
+	int d0 = 8;
+	int d1 = 0;
+	int d2 = 123456789;
+	int d3 = -123456789;
+	int d4 = 97;
+	int d5 = -2147483648;
+	int d6 = 2147483647;
+	int d7 = -12;
 //	printf("TESTO:|%-7d|\n", -14);
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
-	printf("|%d|\n", -2147483648);
-	ft_printf("|%d|", -2147483648);
+
+	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
+			  d1,d2,
+		   d3,d4,d5,d6,d7);
+	printf("%d\n",t);
+	ft_printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0, d1,d2,
+		   d3,d4,d5,d6,d7);
+	printf("%d",g_res);
+//	ft_printf("|%d|", -216);
 //	printf("%07d\n", -54);
 //	ft_printf("%07d\n", -54);
 ////	ft_printf("%0d\n\n",d);

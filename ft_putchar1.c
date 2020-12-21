@@ -48,7 +48,7 @@ void		ft_putnbr_unsigned1(unsigned long nb)
 	q1(nb);
 }
 
-static void		q(int nb)
+static void		q(long nb)
 {
 	char	a;
 
@@ -59,12 +59,11 @@ static void		q(int nb)
 	g_res += write(1, &a, 1);
 }
 
-
-void		ft_putnbr1(int nb)
+void		ft_putnbr1(long nb)
 {
-	if (nb == 0 || nb == -2147483648)
+	if (nb == 0)
 	{
-		g_res += write(1, (nb == 0) ? "0" : "2147483648", (nb == 0) ? 1 : 11);
+		g_res += write(1, "0", 1);
 		return ;
 	}
 	if (nb < 0)

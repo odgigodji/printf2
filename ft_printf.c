@@ -9,7 +9,6 @@
 int 	ft_printf(const char *str, ...)
 {
 	g_res = 0;
-	int k = 0;
 	size_t str_len;
 	va_list ap;
 	t_spec *spec;
@@ -25,7 +24,7 @@ int 	ft_printf(const char *str, ...)
 		{
 //			str++;
 			ft_parser((char *)str, ap, spec);// dlinu parsa
-			k+= ft_processor(spec);
+			ft_processor(spec);
 			str = str + spec->len_after_perc ;
 //			k += spec->len_after_perc;
 		}

@@ -37,9 +37,9 @@ void	ft_print_with_zeroes(t_spec *spec)
 	if (spec->dot == 1 && !spec->precision && !spec->value.d && spec->width
 	== -1)
 		return;
-	if (spec->precision == 0 && spec->dot == 1)
+	if (spec->precision == 0 && spec->dot == 1 && spec->value.d == 0)
 	{
-		ft_putchar1(32);
+		ft_putchar1(' ');
 		return;
 	}
 	if (spec->precision < spec->len)
@@ -73,41 +73,7 @@ void	ft_print_with_zeroes(t_spec *spec)
 //
 //}
 
-void 	ft_print_d1(t_spec *spec)
-{
-	int i = 0;
 
-//	printf("[%d]", spec->precision);
-//	if (spec->value.s == NULL)
-//		spec->value.s = "(null)";
-	if (spec->value.d < 0)
-		spec->len +=1;
-	if (spec->precision > 0 && spec->precision < spec->len)
-		spec->precision = spec->len;
-//	if (spec->precision == 0 && spec->dot == 1)
-//		spec->len = 0 ;
-	if (spec->flag == ' ')
-	{
-		while (i++ < (spec->width - spec->len - spec->precision + spec->len))
-			ft_putchar1(' ');
-		ft_print_with_zeroes(spec);
-//		ft_putnbr(spec->value.d);
-	}
-	else if (spec->flag == '-')
-	{
-		ft_putnbr(spec->value.d);
-		while (i++ < (spec->width - spec->len))
-			ft_putchar1(' ');
-	}
-	else if (spec->flag == '0')
-	{
-//		printf("[%c]",spec->flag);
-//		printf("[%d]",spec->width);
-		while (i++ < (spec->width - spec->len))
-			ft_putchar1('0');
-		ft_putnbr(spec->value.d);
-	}
-}
 
 void 	ft_print_d(t_spec *spec)
 {
@@ -361,35 +327,7 @@ void 	ft_print_x1(t_spec *spec)
 	}
 }
 
-void 	ft_print_X1(t_spec *spec)
-{
-	int len;
-	char c;
 
-	len = spec->len;
-	if (spec->flag == '-')
-	{
-//		print_value(spec->value, spec->type, spec->precision, spec->len);
-		while (spec->precision > spec->len++)
-			ft_putchar1('0');
-		ft_putstr1(spec->value.X);
-
-		while (len++ < spec->width)
-			ft_putchar1(' ');
-	}
-	else
-	{
-		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
-		if (spec->dot && spec->precision > len)
-			spec->width = spec->width - spec->precision + len;
-		while (len++ < spec->width)
-			ft_putchar1(c);
-//		print_value(spec->value, spec->type, spec->precision, spec->len);
-		while (spec->precision > spec->len++)
-			ft_putchar1('0');
-		ft_putstr1(spec->value.X);
-	}
-}
 
 int 	ft_spaces_p(t_spec *spec)
 {
@@ -452,9 +390,7 @@ void 	ft_print_p(t_spec *spec)
 	}
 }
 
-int 	ft_lenn(t_spec *spec);
-
-int	ft_processor(t_spec *spec)
+void	ft_processor(t_spec *spec)
 {
 //	printf("\n\n-------------This is processor mfqz!-\n");
 //
@@ -468,7 +404,6 @@ int	ft_processor(t_spec *spec)
 
 //	printf("\nPROC:");
 
-	int LEN =ft_lenn(spec);
 	if (spec->type == 'd')
 		ft_print_d(spec);
 	if (spec->type == 's')
@@ -483,7 +418,6 @@ int	ft_processor(t_spec *spec)
 		ft_print_p(spec);
 	if (spec->type == 'X')
 		ft_print_X(spec);
-	return (LEN);
 //	printf("|LEN%d|",ft_lenn(spec));
 //	else
 //		while(spec->len_after_perc--)
@@ -494,21 +428,22 @@ int	ft_processor(t_spec *spec)
 //		ft_print_d(spec);
 }
 
-int 	ft_lenn(t_spec *spec)
-{
-	if (!spec->width && !spec->precision)
-		return (spec->len);
-	else if (spec->width && !spec->precision)
-		return (spec->width);
-	else if (!spec->width && spec->precision)
-		return ((spec->type=='s' ? spec->precision :\
-		spec->len));
-	else if (spec->width > spec->precision)
-		return(spec->width);
-	else if (spec->width < spec->precision)
-		return (0);
-	return 0;
-}
+
+//int 	ft_lenn(t_spec *spec)
+//{
+//	if (!spec->width && !spec->precision)
+//		return (spec->len);
+//	else if (spec->width && !spec->precision)
+//		return (spec->width);
+//	else if (!spec->width && spec->precision)
+//		return ((spec->type=='s' ? spec->precision :\
+//		spec->len));
+//	else if (spec->width > spec->precision)
+//		return(spec->width);
+//	else if (spec->width < spec->precision)
+//		return (0);
+//	return 0;
+//}
 
 //	printf("|type:%c|\n",spec ->type);
 //	if (spec->type == 'd')
@@ -698,5 +633,71 @@ int 	ft_lenn(t_spec *spec)
 //			while (spec->width-- > spec->len)
 //				ft_putchar1(' ');
 //		}
+//	}
+//}
+
+//void 	ft_print_d1(t_spec *spec)
+//{
+//	int i = 0;
+//
+////	printf("[%d]", spec->precision);
+////	if (spec->value.s == NULL)
+////		spec->value.s = "(null)";
+//	if (spec->value.d < 0)
+//		spec->len +=1;
+//	if (spec->precision > 0 && spec->precision < spec->len)
+//		spec->precision = spec->len;
+////	if (spec->precision == 0 && spec->dot == 1)
+////		spec->len = 0 ;
+//	if (spec->flag == ' ')
+//	{
+//		while (i++ < (spec->width - spec->len - spec->precision + spec->len))
+//			ft_putchar1(' ');
+//		ft_print_with_zeroes(spec);
+////		ft_putnbr(spec->value.d);
+//	}
+//	else if (spec->flag == '-')
+//	{
+//		ft_putnbr(spec->value.d);
+//		while (i++ < (spec->width - spec->len))
+//			ft_putchar1(' ');
+//	}
+//	else if (spec->flag == '0')
+//	{
+////		printf("[%c]",spec->flag);
+////		printf("[%d]",spec->width);
+//		while (i++ < (spec->width - spec->len))
+//			ft_putchar1('0');
+//		ft_putnbr(spec->value.d);
+//	}
+//}
+//
+//void 	ft_print_X1(t_spec *spec)
+//{
+//	int len;
+//	char c;
+//
+//	len = spec->len;
+//	if (spec->flag == '-')
+//	{
+////		print_value(spec->value, spec->type, spec->precision, spec->len);
+//		while (spec->precision > spec->len++)
+//			ft_putchar1('0');
+//		ft_putstr1(spec->value.X);
+//
+//		while (len++ < spec->width)
+//			ft_putchar1(' ');
+//	}
+//	else
+//	{
+//		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+//		if (spec->dot && spec->precision > len)
+//			spec->width = spec->width - spec->precision + len;
+//		while (len++ < spec->width)
+//			ft_putchar1(c);
+////		print_value(spec->value, spec->type, spec->precision, spec->len);
+//		while (spec->precision > spec->len++)
+//			ft_putchar1('0');
+//		ft_putstr1(spec->value.X);
 //	}
 //}
