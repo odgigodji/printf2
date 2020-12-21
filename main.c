@@ -30,6 +30,8 @@ int 	main(void)
 //	printf("TESTO:|%-7d|\n", -14);
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
+	printf("|%-d|\n", -2147483648);
+	ft_printf("|%-d|", -2147483648);
 //	printf("%07d\n", -54);
 //	ft_printf("%07d\n", -54);
 ////	ft_printf("%0d\n\n",d);
@@ -42,8 +44,8 @@ int 	main(void)
 //	printf("%-5.0d\n",0);
 //	ft_printf("%-5.0d\n",0);
 
-	printf("%-8.5u number\n",0);
-	ft_printf("%-8.5u number\n\n",0);
+//	printf("%-8.5u number\n",0);
+//	ft_printf("%-8.5u number\n\n",0);
 //
 //	printf("%15.20d\n",d);
 //	printf("%015.20d\n",d);

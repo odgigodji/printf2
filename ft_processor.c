@@ -39,7 +39,7 @@ void	ft_print_with_zeroes(t_spec *spec)
 		return;
 	if (spec->precision == 0 && spec->dot == 1)
 	{
-		ft_putchar(32);
+		ft_putchar1(32);
 		return;
 	}
 	if (spec->precision < spec->len)
@@ -119,14 +119,14 @@ void 	ft_print_d(t_spec *spec)
 		if (spec->value.d < 0)
 		{
 //			len += 1;
-			ft_putchar('-');
+			ft_putchar1('-');
 		}
 		while (spec->precision > len++ )
 			ft_putchar1('0');
 
 //		ft_print_with_zeroes(&spec->len, spec->value.d, spec->precision);
 		if (spec->dot == 1 && !spec->precision && !spec->value.d)
-			ft_putchar (32);
+			ft_putchar1 (' ');
 		else
 		{
 			ft_putnbr1((spec->value.d < 0) ? -1 * spec->value.d : spec->value.d);
@@ -150,7 +150,7 @@ void 	ft_print_d(t_spec *spec)
 					 spec->len;
 		if (spec->width && !spec->dot && spec->flag == '0' && spec->value.d < 0)
 		{
-			ft_putchar('-');
+			ft_putchar1('-');
 			spec->value.d *= -1;
 		}
 		while(spec->width-- > hz ) //&& spec->dot
@@ -222,6 +222,14 @@ void 	ft_print_u(t_spec *spec)
 	int len;
 	char c;
 
+	if (!spec->precision && !spec->value.u && spec->dot)
+	{
+		while (spec->width--)
+		{
+			ft_putchar1(' ');
+		}
+		return;
+	}
 	len = spec->len;
 	if (spec->flag == '-')
 	{
@@ -230,7 +238,7 @@ void 	ft_print_u(t_spec *spec)
 			ft_putchar1('0');
 		ft_putnbr_unsigned1(spec->value.u);
 
-		while (len++ < spec->width)
+		while (spec->len++ <= spec->width)
 			ft_putchar1(' ');
 	}
 	else
@@ -248,6 +256,82 @@ void 	ft_print_u(t_spec *spec)
 }
 
 void 	ft_print_x(t_spec *spec)
+{
+	int len;
+	char c;
+
+	if (!spec->precision && spec->value.x[0] == '0' && spec->dot)
+	{
+		while (spec->width--)
+		{
+			ft_putchar1(' ');
+		}
+		return;
+	}
+	len = spec->len;
+	if (spec->flag == '-')
+	{
+//		print_value(spec->value, spec->type, spec->precision, spec->len);
+		while (spec->precision > spec->len++)
+			ft_putchar1('0');
+		ft_putstr1(spec->value.x);
+
+		while (spec->len++ <= spec->width)
+			ft_putchar1(' ');
+	}
+	else
+	{
+		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+		if (spec->dot && spec->precision > len)
+			spec->width = spec->width - spec->precision + len;
+		while (len++ < spec->width)
+			ft_putchar1(c);
+//		print_value(spec->value, spec->type, spec->precision, spec->len);
+		while (spec->precision > spec->len++)
+			ft_putchar1('0');
+		ft_putstr1(spec->value.x);
+	}
+}
+
+void 	ft_print_X(t_spec *spec)
+{
+	int len;
+	char c;
+
+	if (!spec->precision && spec->value.X[0] == '0' && spec->dot)
+	{
+		while (spec->width--)
+		{
+			ft_putchar1(' ');
+		}
+		return;
+	}
+	len = spec->len;
+	if (spec->flag == '-')
+	{
+//		print_value(spec->value, spec->type, spec->precision, spec->len);
+		while (spec->precision > spec->len++)
+			ft_putchar1('0');
+		ft_putstr1(spec->value.X);
+
+		while (spec->len++ <= spec->width)
+			ft_putchar1(' ');
+	}
+	else
+	{
+		c = (spec->flag == '0' && !spec->dot) ? '0' : ' ';
+		if (spec->dot && spec->precision > len)
+			spec->width = spec->width - spec->precision + len;
+		while (len++ < spec->width)
+			ft_putchar1(c);
+//		print_value(spec->value, spec->type, spec->precision, spec->len);
+		while (spec->precision > spec->len++)
+			ft_putchar1('0');
+		ft_putstr1(spec->value.X);
+	}
+}
+
+void 	ft_print_x1(t_spec *spec)
 {
 	int len;
 	char c;
@@ -277,7 +361,7 @@ void 	ft_print_x(t_spec *spec)
 	}
 }
 
-void 	ft_print_X(t_spec *spec)
+void 	ft_print_X1(t_spec *spec)
 {
 	int len;
 	char c;
@@ -324,9 +408,21 @@ void 	ft_print_p(t_spec *spec)
 	//value.p
 //	printf("%s",spec->value.p);
 
+
 	int len;
 	char c;
 	int spaces;
+
+	if (!spec->precision && spec->value.p[0] == '0' && spec->dot)
+	{
+
+		while (spec->width-- > 2)
+		{
+			ft_putchar1(' ');
+		}
+		ft_putstr1("0x");
+		return;
+	}
 
 	spaces = ft_spaces_p(spec);
 //	len = spec->len;
