@@ -33,13 +33,13 @@ static void	q1(unsigned int nb)
 	g_res += write(1, &a, 1);
 }
 
-void		ft_putnbr_unsigned(unsigned long nb)
+void		ft_putnbr_unsigned1(unsigned long nb)
 {
-//	if (nb == 0 || nb == -2147483648)
-//	{
-//		write(1, (nb == 0) ? "0" : "-2147483648", (nb == 0) ? 1 : 11);
-//		return ;
-//	}
+	if (nb == 0)
+	{
+		write(1, "0", 1);
+		return ;
+	}
 	if (nb < 0)
 	{
 		g_res += write(1, "-", 1);

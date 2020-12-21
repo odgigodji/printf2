@@ -26,23 +26,24 @@ int 	main(void)
 	int a1 = 1;
 	int a2 = 2;
 	int a3 = 3;
-	int d = 123;
-	printf("TESTO:|%7d|\n", -14);
-	ft_printf("TESTM:|%7d|\n", -14);
+	int d = -216;
+//	printf("TESTO:|%-7d|\n", -14);
+//	ft_printf("TESTM:|%-7d|\n", -14);
+//
+//	printf("%07d\n", -54);
+//	ft_printf("%07d\n", -54);
+////	ft_printf("%0d\n\n",d);
+////
+//	printf("%05d\n", 43);
+//	ft_printf("%05d\n", 43);
+//	printf("%-10.5d\n",d);
+//	ft_printf("%-10.5d\n\n",d);
+////
+//	printf("%-5.0d\n",0);
+//	ft_printf("%-5.0d\n",0);
 
-//	printf("%0d\n",d);
-//	ft_printf("%d\n",d);
-//	ft_printf("%0d\n\n",d);
-//
-//	printf("%15d\n",d);
-//	printf("%015d\n",d);
-//	ft_printf("%15d\n",d);
-//	ft_printf("%015d\n\n",d);
-//
-//	printf("%15.5d\n",d);
-//	printf("%015.5d\n",d);
-//	ft_printf("%15.5d\n",d);
-//	ft_printf("%015.5d\n\n",d);
+	printf("%-8.5u number\n",0);
+	ft_printf("%-8.5u number\n\n",0);
 //
 //	printf("%15.20d\n",d);
 //	printf("%015.20d\n",d);

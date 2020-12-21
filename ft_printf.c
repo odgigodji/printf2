@@ -2,8 +2,8 @@
 #include "ft_printf.h"
 
 //int g_res = 0;
-//s,p,c - ok
-//d,u,x,X - work
+//s,p,c,d - ok
+//u,x,X - work
 
 
 int 	ft_printf(const char *str, ...)

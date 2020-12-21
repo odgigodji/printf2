@@ -22,6 +22,10 @@ libft/libft.h
 ft_printf.h
 /Users/namerei/PRINTF/ft_printf.h
 
+/Users/namerei/PRINTF/ft_putchar1.c
+ft_printf.h
+/Users/namerei/PRINTF/ft_printf.h
+
 /Users/namerei/PRINTF/libft/libft.h
 unistd.h
 -

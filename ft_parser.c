@@ -84,7 +84,7 @@ int ft_precision_parser(char **str, va_list ap, int *dot)
 {
 	int precision;
 
-	precision = 0;
+	precision = 0; // -1 maybe
 	*dot = 0;
 	if (**str == '.')
 	{
@@ -222,6 +222,7 @@ void ft_parser(char *str, va_list ap, t_spec *spec)
 
 //	if (!(spec = (t_spec *)malloc(sizeof(t_spec*))))
 //		return(NULL);
+	spec->width = 0;
 
 	spec->len_after_perc = ft_strlen_type(str);
 //	printf("[RES%d]",spec->len_after_perc);
