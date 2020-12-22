@@ -63,11 +63,3 @@ void		ft_putnbr1(long nb)
 	}
 	q(nb);
 }
-
-void		ft_putstr1(char *s)
-{
-	while (*s)
-	{
-		ft_putchar1(*s++);
-	}
-}

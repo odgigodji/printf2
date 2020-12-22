@@ -12,6 +12,10 @@
 
 #include "ft_printf.h"
 
+/*
+** len before type symbol
+*/
+
 size_t	ft_strlen_type(const char *s)
 {
 	unsigned long len;
@@ -26,6 +30,10 @@ size_t	ft_strlen_type(const char *s)
 	}
 	return (0);
 }
+
+/*
+** initialisation of structure value
+*/
 
 t_value	ft_val_init(void)
 {
@@ -43,6 +51,7 @@ t_value	ft_val_init(void)
 }
 
 /*
+** atoi for 16 base:
 ** flag 1 for X
 ** flag 0 for x and p
 */
