@@ -24,7 +24,7 @@ int 	main(void)
 	int d6 = 2147483647;
 	int d7 = -12;
 
-int a = ft_printf("%x\n", 123);
+int a = ft_printf("%d\n",20);
 //	ft_printf("{%p}",1234);
 //	ft_printf("-%d-\n", a);
 //	printf("TESTO:|%-7d|\n", -14);
@@ -33,7 +33,7 @@ int a = ft_printf("%x\n", 123);
 //ft_strlen(NULL);
 //	printf("%04.*X\n", -1 ,d0 );
 //	int a = ft_printf("%x \n", 1234);
-	ft_printf("|%d|\n", a);
+	printf("|%d|\n", a);
 //
 //////	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
 //////			  d1,d2,

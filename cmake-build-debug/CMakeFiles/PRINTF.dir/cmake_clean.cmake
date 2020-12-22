@@ -1,8 +1,11 @@
 file(REMOVE_RECURSE
   "CMakeFiles/PRINTF.dir/ft_parser.c.o"
+  "CMakeFiles/PRINTF.dir/ft_parser_utils.c.o"
+  "CMakeFiles/PRINTF.dir/ft_print_d_c.c.o"
+  "CMakeFiles/PRINTF.dir/ft_print_p_u.c.o"
+  "CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o"
   "CMakeFiles/PRINTF.dir/ft_printf.c.o"
-  "CMakeFiles/PRINTF.dir/ft_processor.c.o"
-  "CMakeFiles/PRINTF.dir/ft_putchar1.c.o"
+  "CMakeFiles/PRINTF.dir/ft_printf_utils.c.o"
   "CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o"
   "CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o"
   "CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o"

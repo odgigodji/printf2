@@ -85,16 +85,25 @@
 		<Unit filename="/Users/namerei/PRINTF/ft_parser.c">
 			<Option target="PRINTF"/>
 		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/ft_parser_utils.c">
+			<Option target="PRINTF"/>
+		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/ft_print_d_c.c">
+			<Option target="PRINTF"/>
+		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/ft_print_p_u.c">
+			<Option target="PRINTF"/>
+		</Unit>
+		<Unit filename="/Users/namerei/PRINTF/ft_print_x_xup_s.c">
+			<Option target="PRINTF"/>
+		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/ft_printf.c">
 			<Option target="PRINTF"/>
 		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/ft_printf.h">
 			<Option target="PRINTF"/>
 		</Unit>
-		<Unit filename="/Users/namerei/PRINTF/ft_processor.c">
-			<Option target="PRINTF"/>
-		</Unit>
-		<Unit filename="/Users/namerei/PRINTF/ft_putchar1.c">
+		<Unit filename="/Users/namerei/PRINTF/ft_printf_utils.c">
 			<Option target="PRINTF"/>
 		</Unit>
 		<Unit filename="/Users/namerei/PRINTF/libft/ft_atoi.c">

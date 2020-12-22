@@ -5,17 +5,29 @@ CMakeFiles/PRINTF.dir/ft_parser.c.o: ../ft_parser.c
 CMakeFiles/PRINTF.dir/ft_parser.c.o: ../ft_printf.h
 CMakeFiles/PRINTF.dir/ft_parser.c.o: ../libft/libft.h
 
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o: ../ft_parser_utils.c
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o: ../libft/libft.h
+
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o: ../ft_print_d_c.c
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o: ../libft/libft.h
+
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o: ../ft_print_p_u.c
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o: ../libft/libft.h
+
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o: ../ft_print_x_xup_s.c
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o: ../libft/libft.h
+
 CMakeFiles/PRINTF.dir/ft_printf.c.o: ../ft_printf.c
 CMakeFiles/PRINTF.dir/ft_printf.c.o: ../ft_printf.h
 CMakeFiles/PRINTF.dir/ft_printf.c.o: ../libft/libft.h
 
-CMakeFiles/PRINTF.dir/ft_processor.c.o: ../ft_printf.h
-CMakeFiles/PRINTF.dir/ft_processor.c.o: ../ft_processor.c
-CMakeFiles/PRINTF.dir/ft_processor.c.o: ../libft/libft.h
-
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../ft_printf.h
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../ft_putchar1.c
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../libft/libft.h
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o: ../ft_printf.h
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o: ../ft_printf_utils.c
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o: ../libft/libft.h
 
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: ../libft/libft.h

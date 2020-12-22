@@ -90,35 +90,9 @@ CMakeFiles/PRINTF.dir/ft_printf.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_printf.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_printf.c -o CMakeFiles/PRINTF.dir/ft_printf.c.s
 
-CMakeFiles/PRINTF.dir/ft_parser.c.o: CMakeFiles/PRINTF.dir/flags.make
-CMakeFiles/PRINTF.dir/ft_parser.c.o: ../ft_parser.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PRINTF.dir/ft_parser.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_parser.c.o   -c /Users/namerei/PRINTF/ft_parser.c
-
-CMakeFiles/PRINTF.dir/ft_parser.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_parser.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_parser.c > CMakeFiles/PRINTF.dir/ft_parser.c.i
-
-CMakeFiles/PRINTF.dir/ft_parser.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_parser.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_parser.c -o CMakeFiles/PRINTF.dir/ft_parser.c.s
-
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o: CMakeFiles/PRINTF.dir/flags.make
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o: ../ft_putchar1.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PRINTF.dir/ft_putchar1.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_putchar1.c.o   -c /Users/namerei/PRINTF/ft_putchar1.c
-
-CMakeFiles/PRINTF.dir/ft_putchar1.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_putchar1.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_putchar1.c > CMakeFiles/PRINTF.dir/ft_putchar1.c.i
-
-CMakeFiles/PRINTF.dir/ft_putchar1.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_putchar1.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_putchar1.c -o CMakeFiles/PRINTF.dir/ft_putchar1.c.s
-
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o: ../libft/ft_strlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o   -c /Users/namerei/PRINTF/libft/ft_strlen.c
 
 CMakeFiles/PRINTF.dir/libft/ft_strlen.c.i: cmake_force
@@ -131,7 +105,7 @@ CMakeFiles/PRINTF.dir/libft/ft_strlen.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o: ../libft/ft_atoi.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building C object CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o   -c /Users/namerei/PRINTF/libft/ft_atoi.c
 
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.i: cmake_force
@@ -144,7 +118,7 @@ CMakeFiles/PRINTF.dir/libft/ft_atoi.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o: ../libft/ft_itoa.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building C object CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o   -c /Users/namerei/PRINTF/libft/ft_itoa.c
 
 CMakeFiles/PRINTF.dir/libft/ft_itoa.c.i: cmake_force
@@ -157,7 +131,7 @@ CMakeFiles/PRINTF.dir/libft/ft_itoa.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o: ../libft/ft_strrev.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_strrev.c.o   -c /Users/namerei/PRINTF/libft/ft_strrev.c
 
 CMakeFiles/PRINTF.dir/libft/ft_strrev.c.i: cmake_force
@@ -170,7 +144,7 @@ CMakeFiles/PRINTF.dir/libft/ft_strrev.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o: ../libft/ft_isspace.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building C object CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_isspace.c.o   -c /Users/namerei/PRINTF/libft/ft_isspace.c
 
 CMakeFiles/PRINTF.dir/libft/ft_isspace.c.i: cmake_force
@@ -183,7 +157,7 @@ CMakeFiles/PRINTF.dir/libft/ft_isspace.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o: ../libft/ft_isdigit.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building C object CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.o   -c /Users/namerei/PRINTF/libft/ft_isdigit.c
 
 CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.i: cmake_force
@@ -196,7 +170,7 @@ CMakeFiles/PRINTF.dir/libft/ft_isdigit.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o: ../libft/ft_putnbr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.o   -c /Users/namerei/PRINTF/libft/ft_putnbr.c
 
 CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.i: cmake_force
@@ -209,7 +183,7 @@ CMakeFiles/PRINTF.dir/libft/ft_putnbr.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o: ../libft/ft_putstr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_putstr.c.o   -c /Users/namerei/PRINTF/libft/ft_putstr.c
 
 CMakeFiles/PRINTF.dir/libft/ft_putstr.c.i: cmake_force
@@ -222,7 +196,7 @@ CMakeFiles/PRINTF.dir/libft/ft_putstr.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o: ../libft/ft_putchar.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_putchar.c.o   -c /Users/namerei/PRINTF/libft/ft_putchar.c
 
 CMakeFiles/PRINTF.dir/libft/ft_putchar.c.i: cmake_force
@@ -235,7 +209,7 @@ CMakeFiles/PRINTF.dir/libft/ft_putchar.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o: ../libft/ft_numlen.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_numlen.c.o   -c /Users/namerei/PRINTF/libft/ft_numlen.c
 
 CMakeFiles/PRINTF.dir/libft/ft_numlen.c.i: cmake_force
@@ -248,7 +222,7 @@ CMakeFiles/PRINTF.dir/libft/ft_numlen.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.o: ../libft/ft_putstrn.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.o   -c /Users/namerei/PRINTF/libft/ft_putstrn.c
 
 CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.i: cmake_force
@@ -261,7 +235,7 @@ CMakeFiles/PRINTF.dir/libft/ft_putstrn.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o: ../libft/ft_strjoin.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.o   -c /Users/namerei/PRINTF/libft/ft_strjoin.c
 
 CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.i: cmake_force
@@ -274,7 +248,7 @@ CMakeFiles/PRINTF.dir/libft/ft_strjoin.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o: ../libft/ft_toupper.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building C object CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_toupper.c.o   -c /Users/namerei/PRINTF/libft/ft_toupper.c
 
 CMakeFiles/PRINTF.dir/libft/ft_toupper.c.i: cmake_force
@@ -287,7 +261,7 @@ CMakeFiles/PRINTF.dir/libft/ft_toupper.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o: ../libft/ft_numlen_unsigned.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.o   -c /Users/namerei/PRINTF/libft/ft_numlen_unsigned.c
 
 CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.i: cmake_force
@@ -300,7 +274,7 @@ CMakeFiles/PRINTF.dir/libft/ft_numlen_unsigned.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o: ../libft/ft_strchr.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o   -c /Users/namerei/PRINTF/libft/ft_strchr.c
 
 CMakeFiles/PRINTF.dir/libft/ft_strchr.c.i: cmake_force
@@ -313,7 +287,7 @@ CMakeFiles/PRINTF.dir/libft/ft_strchr.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o: ../libft/ft_calloc.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building C object CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o   -c /Users/namerei/PRINTF/libft/ft_calloc.c
 
 CMakeFiles/PRINTF.dir/libft/ft_calloc.c.i: cmake_force
@@ -326,7 +300,7 @@ CMakeFiles/PRINTF.dir/libft/ft_calloc.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o: ../libft/ft_bzero.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building C object CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o   -c /Users/namerei/PRINTF/libft/ft_bzero.c
 
 CMakeFiles/PRINTF.dir/libft/ft_bzero.c.i: cmake_force
@@ -339,7 +313,7 @@ CMakeFiles/PRINTF.dir/libft/ft_bzero.c.s: cmake_force
 
 CMakeFiles/PRINTF.dir/libft/ft_memset.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/libft/ft_memset.c.o: ../libft/ft_memset.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/PRINTF.dir/libft/ft_memset.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building C object CMakeFiles/PRINTF.dir/libft/ft_memset.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/libft/ft_memset.c.o   -c /Users/namerei/PRINTF/libft/ft_memset.c
 
 CMakeFiles/PRINTF.dir/libft/ft_memset.c.i: cmake_force
@@ -350,22 +324,87 @@ CMakeFiles/PRINTF.dir/libft/ft_memset.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/libft/ft_memset.c.s"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/libft/ft_memset.c -o CMakeFiles/PRINTF.dir/libft/ft_memset.c.s
 
-CMakeFiles/PRINTF.dir/ft_processor.c.o: CMakeFiles/PRINTF.dir/flags.make
-CMakeFiles/PRINTF.dir/ft_processor.c.o: ../ft_processor.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/PRINTF.dir/ft_processor.c.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_processor.c.o   -c /Users/namerei/PRINTF/ft_processor.c
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o: ../ft_printf_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building C object CMakeFiles/PRINTF.dir/ft_printf_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_printf_utils.c.o   -c /Users/namerei/PRINTF/ft_printf_utils.c
 
-CMakeFiles/PRINTF.dir/ft_processor.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_processor.c.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_processor.c > CMakeFiles/PRINTF.dir/ft_processor.c.i
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_printf_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_printf_utils.c > CMakeFiles/PRINTF.dir/ft_printf_utils.c.i
 
-CMakeFiles/PRINTF.dir/ft_processor.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_processor.c.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_processor.c -o CMakeFiles/PRINTF.dir/ft_processor.c.s
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_printf_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_printf_utils.c -o CMakeFiles/PRINTF.dir/ft_printf_utils.c.s
+
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o: ../ft_print_p_u.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building C object CMakeFiles/PRINTF.dir/ft_print_p_u.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_print_p_u.c.o   -c /Users/namerei/PRINTF/ft_print_p_u.c
+
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_print_p_u.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_print_p_u.c > CMakeFiles/PRINTF.dir/ft_print_p_u.c.i
+
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_print_p_u.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_print_p_u.c -o CMakeFiles/PRINTF.dir/ft_print_p_u.c.s
+
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o: ../ft_print_d_c.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building C object CMakeFiles/PRINTF.dir/ft_print_d_c.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_print_d_c.c.o   -c /Users/namerei/PRINTF/ft_print_d_c.c
+
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_print_d_c.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_print_d_c.c > CMakeFiles/PRINTF.dir/ft_print_d_c.c.i
+
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_print_d_c.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_print_d_c.c -o CMakeFiles/PRINTF.dir/ft_print_d_c.c.s
+
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o: ../ft_print_x_xup_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o   -c /Users/namerei/PRINTF/ft_print_x_xup_s.c
+
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_print_x_xup_s.c > CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.i
+
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_print_x_xup_s.c -o CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.s
+
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o: ../ft_parser_utils.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building C object CMakeFiles/PRINTF.dir/ft_parser_utils.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_parser_utils.c.o   -c /Users/namerei/PRINTF/ft_parser_utils.c
+
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_parser_utils.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_parser_utils.c > CMakeFiles/PRINTF.dir/ft_parser_utils.c.i
+
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_parser_utils.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_parser_utils.c -o CMakeFiles/PRINTF.dir/ft_parser_utils.c.s
+
+CMakeFiles/PRINTF.dir/ft_parser.c.o: CMakeFiles/PRINTF.dir/flags.make
+CMakeFiles/PRINTF.dir/ft_parser.c.o: ../ft_parser.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building C object CMakeFiles/PRINTF.dir/ft_parser.c.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/ft_parser.c.o   -c /Users/namerei/PRINTF/ft_parser.c
+
+CMakeFiles/PRINTF.dir/ft_parser.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/PRINTF.dir/ft_parser.c.i"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /Users/namerei/PRINTF/ft_parser.c > CMakeFiles/PRINTF.dir/ft_parser.c.i
+
+CMakeFiles/PRINTF.dir/ft_parser.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/PRINTF.dir/ft_parser.c.s"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /Users/namerei/PRINTF/ft_parser.c -o CMakeFiles/PRINTF.dir/ft_parser.c.s
 
 CMakeFiles/PRINTF.dir/main.c.o: CMakeFiles/PRINTF.dir/flags.make
 CMakeFiles/PRINTF.dir/main.c.o: ../main.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building C object CMakeFiles/PRINTF.dir/main.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building C object CMakeFiles/PRINTF.dir/main.c.o"
 	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/PRINTF.dir/main.c.o   -c /Users/namerei/PRINTF/main.c
 
 CMakeFiles/PRINTF.dir/main.c.i: cmake_force
@@ -379,8 +418,6 @@ CMakeFiles/PRINTF.dir/main.c.s: cmake_force
 # Object files for target PRINTF
 PRINTF_OBJECTS = \
 "CMakeFiles/PRINTF.dir/ft_printf.c.o" \
-"CMakeFiles/PRINTF.dir/ft_parser.c.o" \
-"CMakeFiles/PRINTF.dir/ft_putchar1.c.o" \
 "CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o" \
 "CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o" \
 "CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o" \
@@ -399,15 +436,18 @@ PRINTF_OBJECTS = \
 "CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o" \
 "CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o" \
 "CMakeFiles/PRINTF.dir/libft/ft_memset.c.o" \
-"CMakeFiles/PRINTF.dir/ft_processor.c.o" \
+"CMakeFiles/PRINTF.dir/ft_printf_utils.c.o" \
+"CMakeFiles/PRINTF.dir/ft_print_p_u.c.o" \
+"CMakeFiles/PRINTF.dir/ft_print_d_c.c.o" \
+"CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o" \
+"CMakeFiles/PRINTF.dir/ft_parser_utils.c.o" \
+"CMakeFiles/PRINTF.dir/ft_parser.c.o" \
 "CMakeFiles/PRINTF.dir/main.c.o"
 
 # External object files for target PRINTF
 PRINTF_EXTERNAL_OBJECTS =
 
 PRINTF: CMakeFiles/PRINTF.dir/ft_printf.c.o
-PRINTF: CMakeFiles/PRINTF.dir/ft_parser.c.o
-PRINTF: CMakeFiles/PRINTF.dir/ft_putchar1.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_strlen.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_itoa.c.o
@@ -426,11 +466,16 @@ PRINTF: CMakeFiles/PRINTF.dir/libft/ft_strchr.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o
 PRINTF: CMakeFiles/PRINTF.dir/libft/ft_memset.c.o
-PRINTF: CMakeFiles/PRINTF.dir/ft_processor.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_printf_utils.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_print_p_u.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_print_d_c.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_parser_utils.c.o
+PRINTF: CMakeFiles/PRINTF.dir/ft_parser.c.o
 PRINTF: CMakeFiles/PRINTF.dir/main.c.o
 PRINTF: CMakeFiles/PRINTF.dir/build.make
 PRINTF: CMakeFiles/PRINTF.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Linking C executable PRINTF"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Linking C executable PRINTF"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/PRINTF.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

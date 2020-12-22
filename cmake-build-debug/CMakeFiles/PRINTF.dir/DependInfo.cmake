@@ -5,9 +5,12 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
   "/Users/namerei/PRINTF/ft_parser.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_parser.c.o"
+  "/Users/namerei/PRINTF/ft_parser_utils.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_parser_utils.c.o"
+  "/Users/namerei/PRINTF/ft_print_d_c.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_print_d_c.c.o"
+  "/Users/namerei/PRINTF/ft_print_p_u.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_print_p_u.c.o"
+  "/Users/namerei/PRINTF/ft_print_x_xup_s.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o"
   "/Users/namerei/PRINTF/ft_printf.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_printf.c.o"
-  "/Users/namerei/PRINTF/ft_processor.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_processor.c.o"
-  "/Users/namerei/PRINTF/ft_putchar1.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_putchar1.c.o"
+  "/Users/namerei/PRINTF/ft_printf_utils.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/ft_printf_utils.c.o"
   "/Users/namerei/PRINTF/libft/ft_atoi.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o"
   "/Users/namerei/PRINTF/libft/ft_bzero.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_bzero.c.o"
   "/Users/namerei/PRINTF/libft/ft_calloc.c" "/Users/namerei/PRINTF/cmake-build-debug/CMakeFiles/PRINTF.dir/libft/ft_calloc.c.o"

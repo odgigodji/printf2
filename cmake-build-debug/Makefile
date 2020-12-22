@@ -170,6 +170,114 @@ ft_parser.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_parser.c.s
 .PHONY : ft_parser.c.s
 
+ft_parser_utils.o: ft_parser_utils.c.o
+
+.PHONY : ft_parser_utils.o
+
+# target to build an object file
+ft_parser_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_parser_utils.c.o
+.PHONY : ft_parser_utils.c.o
+
+ft_parser_utils.i: ft_parser_utils.c.i
+
+.PHONY : ft_parser_utils.i
+
+# target to preprocess a source file
+ft_parser_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_parser_utils.c.i
+.PHONY : ft_parser_utils.c.i
+
+ft_parser_utils.s: ft_parser_utils.c.s
+
+.PHONY : ft_parser_utils.s
+
+# target to generate assembly for a file
+ft_parser_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_parser_utils.c.s
+.PHONY : ft_parser_utils.c.s
+
+ft_print_d_c.o: ft_print_d_c.c.o
+
+.PHONY : ft_print_d_c.o
+
+# target to build an object file
+ft_print_d_c.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_d_c.c.o
+.PHONY : ft_print_d_c.c.o
+
+ft_print_d_c.i: ft_print_d_c.c.i
+
+.PHONY : ft_print_d_c.i
+
+# target to preprocess a source file
+ft_print_d_c.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_d_c.c.i
+.PHONY : ft_print_d_c.c.i
+
+ft_print_d_c.s: ft_print_d_c.c.s
+
+.PHONY : ft_print_d_c.s
+
+# target to generate assembly for a file
+ft_print_d_c.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_d_c.c.s
+.PHONY : ft_print_d_c.c.s
+
+ft_print_p_u.o: ft_print_p_u.c.o
+
+.PHONY : ft_print_p_u.o
+
+# target to build an object file
+ft_print_p_u.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_p_u.c.o
+.PHONY : ft_print_p_u.c.o
+
+ft_print_p_u.i: ft_print_p_u.c.i
+
+.PHONY : ft_print_p_u.i
+
+# target to preprocess a source file
+ft_print_p_u.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_p_u.c.i
+.PHONY : ft_print_p_u.c.i
+
+ft_print_p_u.s: ft_print_p_u.c.s
+
+.PHONY : ft_print_p_u.s
+
+# target to generate assembly for a file
+ft_print_p_u.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_p_u.c.s
+.PHONY : ft_print_p_u.c.s
+
+ft_print_x_xup_s.o: ft_print_x_xup_s.c.o
+
+.PHONY : ft_print_x_xup_s.o
+
+# target to build an object file
+ft_print_x_xup_s.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o
+.PHONY : ft_print_x_xup_s.c.o
+
+ft_print_x_xup_s.i: ft_print_x_xup_s.c.i
+
+.PHONY : ft_print_x_xup_s.i
+
+# target to preprocess a source file
+ft_print_x_xup_s.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.i
+.PHONY : ft_print_x_xup_s.c.i
+
+ft_print_x_xup_s.s: ft_print_x_xup_s.c.s
+
+.PHONY : ft_print_x_xup_s.s
+
+# target to generate assembly for a file
+ft_print_x_xup_s.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.s
+.PHONY : ft_print_x_xup_s.c.s
+
 ft_printf.o: ft_printf.c.o
 
 .PHONY : ft_printf.o
@@ -197,59 +305,32 @@ ft_printf.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_printf.c.s
 .PHONY : ft_printf.c.s
 
-ft_processor.o: ft_processor.c.o
+ft_printf_utils.o: ft_printf_utils.c.o
 
-.PHONY : ft_processor.o
-
-# target to build an object file
-ft_processor.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_processor.c.o
-.PHONY : ft_processor.c.o
-
-ft_processor.i: ft_processor.c.i
-
-.PHONY : ft_processor.i
-
-# target to preprocess a source file
-ft_processor.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_processor.c.i
-.PHONY : ft_processor.c.i
-
-ft_processor.s: ft_processor.c.s
-
-.PHONY : ft_processor.s
-
-# target to generate assembly for a file
-ft_processor.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_processor.c.s
-.PHONY : ft_processor.c.s
-
-ft_putchar1.o: ft_putchar1.c.o
-
-.PHONY : ft_putchar1.o
+.PHONY : ft_printf_utils.o
 
 # target to build an object file
-ft_putchar1.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.o
-.PHONY : ft_putchar1.c.o
+ft_printf_utils.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_printf_utils.c.o
+.PHONY : ft_printf_utils.c.o
 
-ft_putchar1.i: ft_putchar1.c.i
+ft_printf_utils.i: ft_printf_utils.c.i
 
-.PHONY : ft_putchar1.i
+.PHONY : ft_printf_utils.i
 
 # target to preprocess a source file
-ft_putchar1.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.i
-.PHONY : ft_putchar1.c.i
+ft_printf_utils.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_printf_utils.c.i
+.PHONY : ft_printf_utils.c.i
 
-ft_putchar1.s: ft_putchar1.c.s
+ft_printf_utils.s: ft_printf_utils.c.s
 
-.PHONY : ft_putchar1.s
+.PHONY : ft_printf_utils.s
 
 # target to generate assembly for a file
-ft_putchar1.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_putchar1.c.s
-.PHONY : ft_putchar1.c.s
+ft_printf_utils.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/PRINTF.dir/build.make CMakeFiles/PRINTF.dir/ft_printf_utils.c.s
+.PHONY : ft_printf_utils.c.s
 
 libft/ft_atoi.o: libft/ft_atoi.c.o
 
@@ -776,15 +857,24 @@ help:
 	@echo "... ft_parser.o"
 	@echo "... ft_parser.i"
 	@echo "... ft_parser.s"
+	@echo "... ft_parser_utils.o"
+	@echo "... ft_parser_utils.i"
+	@echo "... ft_parser_utils.s"
+	@echo "... ft_print_d_c.o"
+	@echo "... ft_print_d_c.i"
+	@echo "... ft_print_d_c.s"
+	@echo "... ft_print_p_u.o"
+	@echo "... ft_print_p_u.i"
+	@echo "... ft_print_p_u.s"
+	@echo "... ft_print_x_xup_s.o"
+	@echo "... ft_print_x_xup_s.i"
+	@echo "... ft_print_x_xup_s.s"
 	@echo "... ft_printf.o"
 	@echo "... ft_printf.i"
 	@echo "... ft_printf.s"
-	@echo "... ft_processor.o"
-	@echo "... ft_processor.i"
-	@echo "... ft_processor.s"
-	@echo "... ft_putchar1.o"
-	@echo "... ft_putchar1.i"
-	@echo "... ft_putchar1.s"
+	@echo "... ft_printf_utils.o"
+	@echo "... ft_printf_utils.i"
+	@echo "... ft_printf_utils.s"
 	@echo "... libft/ft_atoi.o"
 	@echo "... libft/ft_atoi.i"
 	@echo "... libft/ft_atoi.s"

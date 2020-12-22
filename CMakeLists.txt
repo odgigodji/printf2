@@ -8,8 +8,6 @@ include_directories(.)
 
 add_executable(PRINTF
         ft_printf.c
-        ft_parser.c
-        ft_putchar1.c
         libft/ft_strlen.c
         libft/ft_atoi.c
         libft/ft_itoa.c
@@ -23,12 +21,16 @@ add_executable(PRINTF
         libft/ft_putstrn.c
         libft/ft_strjoin.c
         libft/ft_toupper.c
-#        libft/ft_putnbr_unsigned.c
         libft/ft_numlen_unsigned.c
         libft/ft_strchr.c
         libft/ft_calloc.c
         libft/ft_bzero.c
         libft/ft_memset.c
-        ft_processor.c
+        ft_printf_utils.c
+        ft_print_p_u.c
+        ft_print_d_c.c
+        ft_print_x_xup_s.c
+        ft_parser_utils.c
+        ft_parser.c
         main.c
         )

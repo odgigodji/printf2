@@ -5,17 +5,29 @@ CMakeFiles/PRINTF.dir/ft_parser.c.o
  /Users/namerei/PRINTF/ft_parser.c
  /Users/namerei/PRINTF/ft_printf.h
  /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/ft_parser_utils.c.o
+ /Users/namerei/PRINTF/ft_parser_utils.c
+ /Users/namerei/PRINTF/ft_printf.h
+ /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/ft_print_d_c.c.o
+ /Users/namerei/PRINTF/ft_print_d_c.c
+ /Users/namerei/PRINTF/ft_printf.h
+ /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/ft_print_p_u.c.o
+ /Users/namerei/PRINTF/ft_print_p_u.c
+ /Users/namerei/PRINTF/ft_printf.h
+ /Users/namerei/PRINTF/libft/libft.h
+CMakeFiles/PRINTF.dir/ft_print_x_xup_s.c.o
+ /Users/namerei/PRINTF/ft_print_x_xup_s.c
+ /Users/namerei/PRINTF/ft_printf.h
+ /Users/namerei/PRINTF/libft/libft.h
 CMakeFiles/PRINTF.dir/ft_printf.c.o
  /Users/namerei/PRINTF/ft_printf.c
  /Users/namerei/PRINTF/ft_printf.h
  /Users/namerei/PRINTF/libft/libft.h
-CMakeFiles/PRINTF.dir/ft_processor.c.o
+CMakeFiles/PRINTF.dir/ft_printf_utils.c.o
  /Users/namerei/PRINTF/ft_printf.h
- /Users/namerei/PRINTF/ft_processor.c
- /Users/namerei/PRINTF/libft/libft.h
-CMakeFiles/PRINTF.dir/ft_putchar1.c.o
- /Users/namerei/PRINTF/ft_printf.h
- /Users/namerei/PRINTF/ft_putchar1.c
+ /Users/namerei/PRINTF/ft_printf_utils.c
  /Users/namerei/PRINTF/libft/libft.h
 CMakeFiles/PRINTF.dir/libft/ft_atoi.c.o
  /Users/namerei/PRINTF/libft/ft_atoi.c
