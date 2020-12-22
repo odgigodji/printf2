@@ -277,6 +277,7 @@ void 	ft_print_x(t_spec *spec)
 			ft_putchar1('0');
 		ft_putstr1(spec->value.x);
 	}
+//	free(spec->value.x);
 }
 
 void 	ft_print_X(t_spec *spec)
@@ -402,11 +403,21 @@ void	ft_processor(t_spec *spec)
 	if (spec->type == 'u')
 		ft_print_u(spec);
 	if (spec->type == 'x')
+	{
 		ft_print_x(spec);
+		free(spec->value.x);
+	}
 	if (spec->type == 'p')
+	{
 		ft_print_p(spec);
+		free(spec->value.p);
+	}
 	if (spec->type == 'X')
+	{
 		ft_print_X(spec);
+		free(spec->value.X);
+	}
+
 //	printf("|LEN%d|",ft_lenn(spec));
 //	else
 //		while(spec->len_after_perc--)

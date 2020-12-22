@@ -20,6 +20,7 @@ typedef struct s_value
 	char 	*x;
 	char	*X;
 	char	*p;
+	int 	error;
 }				t_value;
 
 typedef struct	s_spec

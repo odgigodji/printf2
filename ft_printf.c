@@ -8,34 +8,32 @@
 
 int 	ft_printf(const char *str, ...)
 {
-	g_res = 0;
-	size_t str_len;
 	va_list ap;
 	t_spec *spec;
 
+	g_res = 0;
 	spec = (t_spec*)malloc(sizeof(t_spec));
 	va_start(ap, str);
-	str_len = ft_strlen(str);
-//	while(*str)
-
 	while(*str)
 	{
 		if (*str == '%' && str++)
 		{
-//			str++;
 			ft_parser((char *)str, ap, spec);// dlinu parsa
+			if (spec->value.error == -1)
+			{
+				g_res = -1;
+				break;
+////				printf("%d", spec->value.error);
+//				free(spec);
+//				va_end(ap);
+//				return (-1);
+			}
 			ft_processor(spec);
-			str = str + spec->len_after_perc ;
-//			k += spec->len_after_perc;
+			str = str + spec->len_after_perc;
 		}
 		else
-		{
-			ft_putchar1(*str);
-//			g_res += write(1, str, 1);
-			str++;
-		}
+			ft_putchar1(*str++);
 	}
-//	printf("\nk:%d", k);
 	free(spec);
 	va_end(ap);
 	return (g_res);

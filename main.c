@@ -2,12 +2,6 @@
 #include <stdio.h>
 #include "libft/libft.h"
 
-//int 		main(void)
-//{
-//	ft_printf("h",51);
-//	printf("h",51);
-//	return (0);
-//}
 char *ft_str_toupper(char *s)
 {
 	char *t = (char *)malloc(sizeof(char) + 1);
@@ -18,8 +12,6 @@ char *ft_str_toupper(char *s)
 	t[i] = '\0';
 	return (t);
 }
-
-char *ft_str_toupper(char *s);
 
 int 	main(void)
 {
@@ -35,8 +27,9 @@ int 	main(void)
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
 
-	printf("%04.*x\n", -1 ,d0 );
-	ft_printf("%04.*x\n", -1,  d0 );
+//	printf("%04.*X\n", -1 ,d0 );
+	int a = ft_printf("%04.*d\n", -1,  d0 );
+	ft_printf("hello%y",-1,d6);
 //	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
 //			  d1,d2,
 //		   d3,d4,d5,d6,d7);
@@ -44,7 +37,11 @@ int 	main(void)
 //	ft_printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0, d1,d2,
 //		   d3,d4,d5,d6,d7);
 //	printf("%d",g_res);
-
+//
+//while(1)
+//{
+//	;
+//}
 
 //	ft_printf("|%d|", -216);
 //	printf("%07d\n", -54);
