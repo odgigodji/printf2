@@ -24,7 +24,7 @@ int 	main(void)
 	int d6 = 2147483647;
 	int d7 = -12;
 
-ft_printf("%s", "hello");
+int a = ft_printf("%x\n", 123);
 //	ft_printf("{%p}",1234);
 //	ft_printf("-%d-\n", a);
 //	printf("TESTO:|%-7d|\n", -14);
@@ -33,7 +33,7 @@ ft_printf("%s", "hello");
 //ft_strlen(NULL);
 //	printf("%04.*X\n", -1 ,d0 );
 //	int a = ft_printf("%x \n", 1234);
-//	ft_printf("%a\n", 0);
+	ft_printf("|%d|\n", a);
 //
 //////	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
 //////			  d1,d2,
@@ -116,44 +116,44 @@ ft_printf("%s", "hello");
 //	printf("%d\n",d);
 }
 
-//int		main1(void)
-//{
-//	//%[флаги][ширина][.точность][размер точности][тип]
-//	//%-052*.*x
-//
-//	printf("\n\n--------f"
-//"t_printf bitches!-------------------------\n");
-//
-//	char *str = "%015d";
-////	char *str = "%1d";
-//	int d = 51777;
-//	int i = 51777;
-//	char c = '$';
-//	char  *s = "herrroo";
-//	unsigned int x = 127;
-//	int p = 51234;
-//	unsigned int u = -15;
-//	unsigned int X = -13;
-//
-////	printf("\nPROC:");
-//
-//	int a = ft_printf(str, d);//,d,c,u,p,x,X);
-//
-//	printf("[%d]",a);
-//	printf("\n");
-//
-////	printf("\nORIG:");
-//
-//	int b =	printf(str, d);//,d,c,u,p,x,X);
-//
-//	printf("[%d]",b);
-//
-////	printf("\n%s",ft_str_toupper("her"));
-////	free(ft_str_toupper("her"));
-////	printf("\nc:|%50.c|" , 'v');
-//	return (0);
-//
-//}
+int		main1(void)
+{
+	//%[флаги][ширина][.точность][размер точности][тип]
+	//%-052*.*x
+
+	printf("\n\n--------f"
+"t_printf bitches!-------------------------\n");
+
+	char *str = "%015d";
+//	char *str = "%1d";
+	int d = 51777;
+	int i = 51777;
+	char c = '$';
+	char  *s = "herrroo";
+	unsigned int x = 127;
+	int p = 51234;
+	unsigned int u = -15;
+	unsigned int X = -13;
+
+//	printf("\nPROC:");
+
+	int a = ft_printf(str, d);//,d,c,u,p,x,X);
+
+	printf("[%d]",a);
+	printf("\n");
+
+//	printf("\nORIG:");
+
+	int b =	printf(str, d);//,d,c,u,p,x,X);
+
+	printf("[%d]",b);
+
+//	printf("\n%s",ft_str_toupper("her"));
+//	free(ft_str_toupper("her"));
+//	printf("\nc:|%50.c|" , 'v');
+	return (0);
+
+}
 //
 int		main2()
 {

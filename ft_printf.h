@@ -7,6 +7,8 @@
 #include <stdio.h>
 #include "libft/libft.h"
 
+//#define malloc(x) NULL
+
 //%[флаги][ширина][.точность]+[размер точности][тип]
 
 int g_res;

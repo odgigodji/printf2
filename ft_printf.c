@@ -1,7 +1,6 @@
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-//#define malloc(x) NULL
 
 int 	ft_printf(const char *str, ...)//done
 {

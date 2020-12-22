@@ -147,6 +147,9 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 		value.x = atoi_16(va_arg(ap, unsigned int), 0);
 		if (value.x == NULL && (value.error = -1))
 			return (value);
+
+		printf("|%d|",value.error);
+
 		*len = ft_strlen(value.x);
 	}
 	if (**str == 'X' && (*type = 'X'))
@@ -165,6 +168,10 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 	}
 	if (**str == '%' && (*type = '%'))
 		*len = 1;
+	if (!(ft_strchr("dcsuxiXp%", **str)))
+	{
+		value.error = -1;
+	}
 	(*str)++;
 	return (value);
 }
