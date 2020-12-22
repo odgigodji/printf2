@@ -80,7 +80,9 @@ int ft_precision_parser(char **str, va_list ap, int *dot)
 	return (precision);
 }//done
 
-char *atoi_16(unsigned long x, int flag)//done
+//flag 1 for X
+//flag 0 for x and p
+char *atoi_16(unsigned long x, int flag_type)//done
 {
 	unsigned long tmp;
 	char *c;
@@ -98,7 +100,7 @@ char *atoi_16(unsigned long x, int flag)//done
 	{
 		x %= 16;
 		if (x >= 10)
-			c[i - 1] = (char)((flag == 0) ? (x - 10 + 97) : (x - 10 + 65));
+			c[i - 1] = (char)((flag_type == 0) ? (x - 10 + 97) : (x - 10 + 65));
 		else
 			c[i - 1] = (char)(x + 48);
 		tmp /= 16;
@@ -123,33 +125,6 @@ t_value	ft_val_init(void)
 	return (value);
 }//done
 
-//t_value ft_type_pars_x_X_p(t_value value, va_list ap, char *type, int *len)
-//{
-//	t_value value;
-//
-////	value = ft_val_init();
-//	if (**str == 'x' && (*type = 'x'))
-//	{
-//		*len = ft_strlen(value.x = atoi_16(va_arg(ap, unsigned int), 0));
-//	}
-//	if (**str == 'X' && (*type = 'X'))
-//	{
-//		value.X = atoi_16(va_arg(ap, unsigned int), 1);
-////		value.X = NULL;
-//		if (value.X == NULL)
-//		{
-//			value.error = -1;
-//			return (value);
-//		}
-//		*len = ft_strlen(value.X);
-//	}
-//	if (**str == 'p' && (*type = 'p'))
-//	{
-//		value.p = atoi_16(va_arg(ap, unsigned long), 0);
-//		*len = ft_strlen(value.p);
-//	}
-//	return (value);
-//}
 
 t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 {
@@ -157,44 +132,35 @@ t_value ft_type_parser(char **str, va_list ap, char *type, int *len)
 
 	value = ft_val_init();
 	if ((**str == 'd' || **str == 'i' ) && (*type = 'd'))
-	{
-//		value.d = va_arg(ap, int);
-		*len = ((value.d = va_arg(ap, int)) > 0) ? ft_numlen(value.d) :
-				ft_numlen(-1 * value.d);
-	}
+		*len = ((value.d = va_arg(ap, int)) > 0) ? ft_numlen(value.d) :\
+		ft_numlen(-1 * value.d);
 	if (**str == 'c' && (*type = 'c') && (*len = 1))
 		value.c = va_arg(ap, int); // char
 	if (**str == 's' && (*type = 's'))
-	{
 		*len = ft_strlen(value.s = \
-		((value.s = va_arg(ap, char *)) == NULL) ? """(null)" :value.s);
-//		if (value.s == NULL)
-//			value.s = "(null)";
-//		*len = ft_strlen(value.s);
-	}
+		((value.s = va_arg(ap, char *)) == NULL) ? "(null)" :value.s);
 	if (**str == 'u' && (*type = 'u'))
 		*len = ft_numlen_unsigned(value.u = va_arg(ap, unsigned int));
 
-
-//	value = ft_type_pars_x_X_p(str, ap, type, len);
 	if (**str == 'x' && (*type = 'x'))
 	{
-		*len = ft_strlen(value.x = atoi_16(va_arg(ap, unsigned int), 0));
+		value.x = atoi_16(va_arg(ap, unsigned int), 0);
+		if (value.x == NULL && (value.error = -1))
+			return (value);
+		*len = ft_strlen(value.x);
 	}
 	if (**str == 'X' && (*type = 'X'))
 	{
 		value.X = atoi_16(va_arg(ap, unsigned int), 1);
-//		value.X = NULL;
-		if (value.X == NULL)
-		{
-			value.error = -1;
+		if (value.X == NULL && (value.error = -1))
 			return (value);
-		}
 		*len = ft_strlen(value.X);
 	}
 	if (**str == 'p' && (*type = 'p'))
 	{
 		value.p = atoi_16(va_arg(ap, unsigned long), 0);
+		if (value.p == NULL && (value.error = -1))
+			return (value);
 		*len = ft_strlen(value.p);
 	}
 	if (**str == '%' && (*type = '%'))
@@ -211,6 +177,6 @@ void ft_parser(char *str, va_list ap, t_spec *spec)//done
 	spec->precision = ft_precision_parser(&str, ap, &spec->dot);
 	spec->value = ft_type_parser(&str, ap, &spec->type, &spec->len);
 //	printf("%d", spec->value.error);
-	if (spec->value.error == -1)
-		return ;
+//	if (spec->value.error == -1)
+//		return ;
 }

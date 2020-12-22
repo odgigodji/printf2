@@ -23,17 +23,24 @@ int 	main(void)
 	int d5 = -2147483648;
 	int d6 = 2147483647;
 	int d7 = -12;
+
+ft_printf("%s", "hello");
+//	ft_printf("{%p}",1234);
+//	ft_printf("-%d-\n", a);
 //	printf("TESTO:|%-7d|\n", -14);
 //	ft_printf("TESTM:|%-7d|\n", -14);
 //
-
+//ft_strlen(NULL);
 //	printf("%04.*X\n", -1 ,d0 );
-	int a = ft_printf("%04.*d\n", -1,  d0 );
-	ft_printf("hello%y",-1,d6);
-//	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
-//			  d1,d2,
-//		   d3,d4,d5,d6,d7);
-//	printf("%d\n",t);
+//	int a = ft_printf("%x \n", 1234);
+//	ft_printf("%a\n", 0);
+//
+//////	int t = printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0,
+//////			  d1,d2,
+//////		   d3,d4,d5,d6,d7);
+//	printf("%a\n",a);
+//	int b = printf("%x\n", NULL );
+//	printf("%d\n",b);
 //	ft_printf("|%-.0i, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d, %-.0d|\n", d0, d1,d2,
 //		   d3,d4,d5,d6,d7);
 //	printf("%d",g_res);
@@ -148,115 +155,115 @@ int 	main(void)
 //
 //}
 //
-//int		main2()
-//{
+int		main2()
+{
+
+	int		a;
+	int		a1;
+	int		b;
+
+
+	a = printf("p->%%<-\n\n");
+	b = ft_printf("f->%%<-\n\n");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	a = printf("p->%*.p | %.3s<-\n\n", 0, NULL, "world");
+	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, NULL, "world");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	a = printf("p->%*.p | %.3s<-\n\n", 0, &a1, "world");
+	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, &a1, "world");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n", b);
+
+	a = printf("p->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
+	b = ft_printf("f->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n", b);
+
+//	 while (1);
+	return 0;
+}
 //
-//	int		a;
-//	int		a1;
-//	int		b;
-//
-//
-//	a = printf("p->%%<-\n\n");
-//	b = ft_printf("f->%%<-\n\n");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	a = printf("p->%*.p | %.3s<-\n\n", 0, NULL, "world");
-//	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, NULL, "world");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	a = printf("p->%*.p | %.3s<-\n\n", 0, &a1, "world");
-//	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, &a1, "world");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n", b);
-//
-//	a = printf("p->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
-//	b = ft_printf("f->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n", b);
-//
-//	// while (1);
-//	return 0;
-//}
-//
-//int		main3()
-//{
-//
-//	int		a;
-//	int		a1;
-//	int		b;
-//
-//
-//	a = printf("p->%%<-\n\n");
-//	b = ft_printf("f->%%<-\n\n");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-////	a = printf("p->%*.p | %.3s | %p<-\n\n", 0, NULL, NULL, NULL);
-////	b = ft_printf("f->%*.p | %.3s | %p<-\n\n", 0, NULL, NULL, NULL);
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.p | %.3s<-\n\n", 0, &a1, "world");
-//	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, &a1, "world");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
-//	b = ft_printf("f->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.s | %.3s | %s<-\n\n", 10, "hello", "world", "lol");
-//	b = ft_printf("f->%*.s | %.3s | %s<-\n\n", 10, "hello", "world", "lol");
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.c | %.c | %c<-\n\n", 10, 'a', 'b', 'c');
-//	b = ft_printf("f->%*.c | %.c | %c<-\n\n", 10, 'a', 'b', 'c');
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.x | %.3x | %x<-\n\n", 10, -4, 87654, 45678);
-//	b = ft_printf("f->%*.x | %.3x | %x<-\n\n", 10, -4, 87654, 45678);
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	printf("____________________________________________\n\n");
-//
-//	a = printf("p->%*.d | %.3d | %15.10d<-\n\n", 10, -4, 87654, -45678);
-//	b = ft_printf("f->%*.d | %.3d | %15.10d<-\n\n", 10, -4, 87654, -45678);
-//
-//	printf("p: %d\n\n", a);
-//	ft_printf("f: %d\n\n", b);
-//
-//	// while (1);
-//	return 0;
-//}
+int		main3()
+{
+
+	int		a;
+	int		a1;
+	int		b;
+
+
+	a = printf("p->%%<-\n\n");
+	b = ft_printf("f->%%<-\n\n");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n", b);
+
+	printf("____________________________________________\n\n");
+
+//	a = printf("p->%*.p | %.3s | %p<-\n\n", 0, NULL, NULL, NULL);
+//	b = ft_printf("f->%*.p | %.3s | %p<-\n\n", 0, NULL, NULL, NULL);
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.p | %.3s<-\n\n", 0, &a1, "world");
+	b = ft_printf("f->%*.p | %.3s<-\n\n", 0, &a1, "world");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
+	b = ft_printf("f->%*.u | %.3u | %u<-\n\n", 10, 45678, -1234567u, 4294967295u);
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.s | %.3s | %s<-\n\n", 10, "hello", "world", "lol");
+	b = ft_printf("f->%*.s | %.3s | %s<-\n\n", 10, "hello", "world", "lol");
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.c | %.c | %c<-\n\n", 10, 'a', 'b', 'c');
+	b = ft_printf("f->%*.c | %.c | %c<-\n\n", 10, 'a', 'b', 'c');
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.x | %.3x | %x<-\n\n", 10, -4, 87654, 45678);
+	b = ft_printf("f->%*.x | %.3x | %x<-\n\n", 10, -4, 87654, 45678);
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+	printf("____________________________________________\n\n");
+
+	a = printf("p->%*.d | %.3d | %15.10d<-\n\n", 10, -4, 87654, -45678);
+	b = ft_printf("f->%*.d | %.3d | %15.10d<-\n\n", 10, -4, 87654, -45678);
+
+	printf("p: %d\n\n", a);
+	ft_printf("f: %d\n\n", b);
+
+//	 while (1);
+	return 0;
+}
 //
 ////мжйник для интов
 //int main4(void)

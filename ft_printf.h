@@ -25,15 +25,14 @@ typedef struct s_value
 
 typedef struct	s_spec
 {
-	char	flag; // 0 -
-	int		width;//shirina
-	int		precision;//tochnost' scolco
+	char	flag;
+	int		width;
+	int		precision;
 	char 	type;
 	t_value  value;
 	int		len;
 	int 	dot;
 	int		len_after_perc;
-	int 	end_of_str;
 }				t_spec;
 
 int 	ft_printf(const char *, ...);
@@ -43,6 +42,7 @@ void	ft_processor(t_spec *spec);
 void	ft_putchar1(int c);
 void	ft_putstr1(char *s);
 void	ft_putstrn1(char *s, int n);
-void		ft_putnbr1(long nb);
-
+void	ft_putnbr1(long nb);
+void	ft_putnbr_unsigned1(unsigned long nb);
+void	ft_putnbr1(long nb);
 #endif

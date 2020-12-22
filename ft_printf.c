@@ -1,33 +1,25 @@
 #include "libft/libft.h"
 #include "ft_printf.h"
 
-//int g_res = 0;
-//s,p,c,d - ok
-//u,x,X - work
+//#define malloc(x) NULL
 
-
-int 	ft_printf(const char *str, ...)
+int 	ft_printf(const char *str, ...)//done
 {
 	va_list ap;
 	t_spec *spec;
 
 	g_res = 0;
-	spec = (t_spec*)malloc(sizeof(t_spec));
+	if (!(spec = (t_spec*)malloc(sizeof(t_spec))))
+		return (-1);
 	va_start(ap, str);
 	while(*str)
 	{
 		if (*str == '%' && str++)
 		{
-			ft_parser((char *)str, ap, spec);// dlinu parsa
-			if (spec->value.error == -1)
-			{
-				g_res = -1;
-				break;
-////				printf("%d", spec->value.error);
-//				free(spec);
-//				va_end(ap);
-//				return (-1);
-			}
+			ft_parser((char *)str, ap, spec);
+//			printf("%d",spec->value.error);
+			if (spec->value.error == -1 && (g_res = -1))
+				break ;
 			ft_processor(spec);
 			str = str + spec->len_after_perc;
 		}
@@ -38,10 +30,4 @@ int 	ft_printf(const char *str, ...)
 	va_end(ap);
 	return (g_res);
 }
-
-//s p i точность в d если больше длины d то заполняет нулями
-//d > len
-
-//ширина бльше длины то возвращаю точность
-//если точность
 
